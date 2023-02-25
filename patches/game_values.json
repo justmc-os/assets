@@ -1,0 +1,39 @@
+{
+  "potion_effects": {
+    "elementType": "potion"
+  },
+  "armor_items": {
+    "elementType": "item"
+  },
+  "hotbar_items": {
+    "elementType": "item"
+  },
+  "inventory_items": {
+    "elementType": "item"
+  },
+  "custom_inventory_items": {
+    "elementType": "item"
+  },
+  "passengers": {
+    "elementType": "text"
+  },
+  "attached_leads": {
+    "elementType": "text"
+  },
+  "event_blocks_involved": {
+    "elementType": "location"
+  },
+  "event_added_items": {
+    "keyType": "number",
+    "valueType": "item"
+  },
+  "event_slots_involved": {
+    "elementType": "number"
+  },
+  "selection_target_names": {
+    "elementType": "text"
+  },
+  "selection_target_uuids": {
+    "elementType": "text"
+  }
+}

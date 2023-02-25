@@ -1,0 +1,37 @@
+{
+  "name": "justcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf .cache",
+    "create:cache": "yarn clean && ts-node scripts/create-cache",
+    "create:icons": "ts-node scripts/create-icons",
+    "extract:events": "ts-node scripts/extract-events",
+    "extract:game-values": "ts-node scripts/extract-game-values",
+    "extract:actions": "ts-node scripts/extract-actions",
+    "extract": "yarn extract:events && yarn extract:game-values && yarn extract:actions",
+    "generate": "ts-node scripts/generate-index",
+    "update": "yarn create:cache && yarn extract && yarn generate && yarn build"
+  },
+  "keywords": [
+    "justcode",
+    "justmc",
+    "minecraft",
+    "typescript"
+  ],
+  "author": "rqbik",
+  "license": "MIT",
+  "devDependencies": {
+    "@gitbeaker/node": "^35.8.0",
+    "@types/node": "^18.14.1",
+    "@types/node-fetch": "^2.6.2",
+    "canvas": "^2.11.0",
+    "chalk": "4",
+    "dotenv": "^16.0.3",
+    "node-fetch": "2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}

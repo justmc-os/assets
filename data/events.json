@@ -1,0 +1,402 @@
+[
+  {
+    "id": "player_join"
+  },
+  {
+    "id": "player_quit"
+  },
+  {
+    "id": "player_rejoin"
+  },
+  {
+    "id": "player_chat"
+  },
+  {
+    "id": "player_interact",
+    "worksWith": [
+      "right_click_and_left_click"
+    ]
+  },
+  {
+    "id": "player_right_click"
+  },
+  {
+    "id": "player_left_click"
+  },
+  {
+    "id": "player_place_block"
+  },
+  {
+    "id": "player_break_block"
+  },
+  {
+    "id": "player_right_click_entity"
+  },
+  {
+    "id": "player_right_click_player"
+  },
+  {
+    "id": "player_imbue_potion_cloud"
+  },
+  {
+    "id": "player_pickup_projectile"
+  },
+  {
+    "id": "player_pickup_experience"
+  },
+  {
+    "id": "player_tame_entity"
+  },
+  {
+    "id": "player_leash_entity"
+  },
+  {
+    "id": "player_start_spectating_entity"
+  },
+  {
+    "id": "player_stop_spectating_entity"
+  },
+  {
+    "id": "player_open_inventory"
+  },
+  {
+    "id": "player_click_inventory"
+  },
+  {
+    "id": "player_drag_inventory"
+  },
+  {
+    "id": "player_click_own_inventory"
+  },
+  {
+    "id": "player_craft_item"
+  },
+  {
+    "id": "player_close_inventory"
+  },
+  {
+    "id": "player_swap_hands"
+  },
+  {
+    "id": "player_change_slot"
+  },
+  {
+    "id": "player_shot_bow",
+    "worksWith": [
+      "bow",
+      "crossbow"
+    ]
+  },
+  {
+    "id": "player_launch_projectile",
+    "worksWith": [
+      "eggs",
+      "snowball",
+      "portion"
+    ]
+  },
+  {
+    "id": "player_pickup_item"
+  },
+  {
+    "id": "player_drop_item"
+  },
+  {
+    "id": "player_consume_item",
+    "worksWith": [
+      "food",
+      "potions",
+      "milk"
+    ]
+  },
+  {
+    "id": "player_break_item"
+  },
+  {
+    "id": "player_edit_book"
+  },
+  {
+    "id": "player_fish"
+  },
+  {
+    "id": "player_move"
+  },
+  {
+    "id": "player_jump"
+  },
+  {
+    "id": "player_sneak"
+  },
+  {
+    "id": "player_unsneak"
+  },
+  {
+    "id": "player_teleport"
+  },
+  {
+    "id": "player_start_sprint"
+  },
+  {
+    "id": "player_stop_sprint"
+  },
+  {
+    "id": "player_start_flight"
+  },
+  {
+    "id": "player_stop_flight"
+  },
+  {
+    "id": "player_riptide"
+  },
+  {
+    "id": "player_dismount"
+  },
+  {
+    "id": "player_horse_jump"
+  },
+  {
+    "id": "player_vehicle_jump"
+  },
+  {
+    "id": "player_take_damage"
+  },
+  {
+    "id": "player_damage_player"
+  },
+  {
+    "id": "entity_damage_player"
+  },
+  {
+    "id": "player_damage_entity"
+  },
+  {
+    "id": "player_heal"
+  },
+  {
+    "id": "player_food_level_change"
+  },
+  {
+    "id": "player_projectile_hit"
+  },
+  {
+    "id": "projectile_damage_player"
+  },
+  {
+    "id": "player_death"
+  },
+  {
+    "id": "player_kill_player"
+  },
+  {
+    "id": "player_kill_mob"
+  },
+  {
+    "id": "mob_kill_player"
+  },
+  {
+    "id": "player_respawn",
+    "worksWith": [
+      "wait_before_interacting"
+    ]
+  },
+  {
+    "id": "entity_spawn"
+  },
+  {
+    "id": "entity_removed_from_world"
+  },
+  {
+    "id": "entity_damage_entity"
+  },
+  {
+    "id": "entity_kill_entity"
+  },
+  {
+    "id": "entity_take_damage"
+  },
+  {
+    "id": "entity_heal"
+  },
+  {
+    "id": "entity_death"
+  },
+  {
+    "id": "entity_spell_cast",
+    "worksWith": [
+      "evoker",
+      "illusioner"
+    ]
+  },
+  {
+    "id": "firework_explode"
+  },
+  {
+    "id": "hanging_break",
+    "worksWith": [
+      "item_frame",
+      "painting",
+      "leash"
+    ]
+  },
+  {
+    "id": "projectile_damage_entity"
+  },
+  {
+    "id": "projectile_kill_entity"
+  },
+  {
+    "id": "projectile_hit"
+  },
+  {
+    "id": "entity_drop_item"
+  },
+  {
+    "id": "entity_pickup_item"
+  },
+  {
+    "id": "item_despawn"
+  },
+  {
+    "id": "vehicle_take_damage"
+  },
+  {
+    "id": "block_fall"
+  },
+  {
+    "id": "entity_interact"
+  },
+  {
+    "id": "dispenser_shear_sheep"
+  },
+  {
+    "id": "world_start"
+  },
+  {
+    "id": "world_stop"
+  },
+  {
+    "id": "time_skip",
+    "worksWith": [
+      "sleep",
+      "code"
+    ]
+  },
+  {
+    "id": "world_web_response"
+  },
+  {
+    "id": "block_ignite"
+  },
+  {
+    "id": "block_burn"
+  },
+  {
+    "id": "block_damage"
+  },
+  {
+    "id": "block_fade",
+    "worksWith": [
+      "snow",
+      "ice",
+      "fire",
+      "coral",
+      "turtle_egg",
+      "grass_block"
+    ]
+  },
+  {
+    "id": "tnt_prime"
+  },
+  {
+    "id": "block_explode"
+  },
+  {
+    "id": "entity_explode"
+  },
+  {
+    "id": "entity_explosion"
+  },
+  {
+    "id": "block_piston_extend"
+  },
+  {
+    "id": "block_piston_retract"
+  },
+  {
+    "id": "leaves_decay"
+  },
+  {
+    "id": "block_grow",
+    "worksWith": [
+      "seeds",
+      "pumpkins_and_melons",
+      "turtle_egg"
+    ]
+  },
+  {
+    "id": "block_flow",
+    "worksWith": [
+      "liquids",
+      "dragon_egg"
+    ]
+  },
+  {
+    "id": "block_fertilize"
+  },
+  {
+    "id": "redstone_level_change"
+  },
+  {
+    "id": "brew_complete"
+  },
+  {
+    "id": "block_form",
+    "worksWith": [
+      "snow",
+      "ice",
+      "stone_gen",
+      "concrete"
+    ]
+  },
+  {
+    "id": "block_spread",
+    "worksWith": [
+      "mushrooms",
+      "fire"
+    ]
+  },
+  {
+    "id": "block_form_by_entity",
+    "worksWith": [
+      "snowman",
+      "frost_walker"
+    ]
+  },
+  {
+    "id": "portal_create"
+  },
+  {
+    "id": "bell_ring"
+  },
+  {
+    "id": "entity_bell_ring"
+  },
+  {
+    "id": "note_play"
+  },
+  {
+    "id": "dispenser_dispense_item"
+  },
+  {
+    "id": "dispenser_equip_armor"
+  },
+  {
+    "id": "fluid_level_change"
+  },
+  {
+    "id": "sponge_absorb"
+  },
+  {
+    "id": "falling_block_land"
+  }
+]

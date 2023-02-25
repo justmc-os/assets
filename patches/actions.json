@@ -1,0 +1,288 @@
+{
+  "select_player_by_conditional": {
+    "type": "basic_with_conditional"
+  },
+  "select_entity_by_conditional": {
+    "type": "basic_with_conditional"
+  },
+  "select_filter_by_conditional": {
+    "type": "basic_with_conditional"
+  },
+  "repeat_while": {
+    "type": "container_with_conditional"
+  },
+  "set_variable_format_timestamp": {
+    "args": {
+      "format": {
+        "values": [
+          "CUSTOM",
+          "DD_MM_YYYY_HH_MM_S",
+          "DD_MM_YYYY",
+          "YYYY_MM_DD_HH_MM_S",
+          "YYYY_MM_DD",
+          "EEE_D_MMMM",
+          "EEE_MMMM_D",
+          "EEEE",
+          "HH_MM_SS",
+          "H_MM_A",
+          "H_H_M_M_S_S",
+          "S_S"
+        ]
+      }
+    }
+  },
+  "set_variable_trim_list": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_sort_any_map": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_set_map_value": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_set_list_value": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_reverse_list": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_set_item_enchantments": {
+    "args": {
+      "enchantments": {
+        "keyType": "text",
+        "valueType": "number"
+      }
+    }
+  },
+  "set_variable_remove_map_entry": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_sort_any_list": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_ray_trace_result": {
+    "args": {
+      "entities": {
+        "elementType": "text"
+      }
+    }
+  },
+  "set_variable_randomize_list_order": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_join_text": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_insert_list_value": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_get_map_values": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_get_map_keys": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_get_map_keys_by_value": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_get_map_value": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_get_map_size": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_remove_list_value_at_index": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_remove_list_value": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_get_list_random_value": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_get_list_length": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_get_list_index_of_value": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_create_map": {
+    "args": {
+      "keys": {
+        "elementType": "any"
+      },
+      "values": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_append_map": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      },
+      "other_map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_append_list": {
+    "args": {
+      "list_1": {
+        "elementType": "any"
+      },
+      "list_2": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_get_list_value": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "repeat_for_each_map_entry": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "if_variable_map_value_equals": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "if_variable_map_has_key": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "repeat_for_each_in_list": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "if_variable_list_value_equals": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "if_variable_list_is_empty": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "if_variable_list_contains_value": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  }
+}

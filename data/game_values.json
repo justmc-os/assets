@@ -1,0 +1,646 @@
+[
+  {
+    "id": "current_health",
+    "type": "number"
+  },
+  {
+    "id": "max_health",
+    "type": "number"
+  },
+  {
+    "id": "absorption_health",
+    "type": "number"
+  },
+  {
+    "id": "food_level",
+    "type": "number"
+  },
+  {
+    "id": "food_saturation",
+    "type": "number"
+  },
+  {
+    "id": "food_exhaustion",
+    "type": "number"
+  },
+  {
+    "id": "attack_damage",
+    "type": "number"
+  },
+  {
+    "id": "attack_speed",
+    "type": "number"
+  },
+  {
+    "id": "armor_points",
+    "type": "number"
+  },
+  {
+    "id": "armor_toughness",
+    "type": "number"
+  },
+  {
+    "id": "invulnerability_ticks",
+    "type": "number"
+  },
+  {
+    "id": "experience_level",
+    "type": "number"
+  },
+  {
+    "id": "experience_progress",
+    "type": "number"
+  },
+  {
+    "id": "fire_ticks",
+    "type": "number"
+  },
+  {
+    "id": "freeze_ticks",
+    "type": "number"
+  },
+  {
+    "id": "remaining_air",
+    "type": "number"
+  },
+  {
+    "id": "fall_distance",
+    "type": "number"
+  },
+  {
+    "id": "held_slot",
+    "type": "number"
+  },
+  {
+    "id": "walking_speed",
+    "type": "number"
+  },
+  {
+    "id": "flying_speed",
+    "type": "number"
+  },
+  {
+    "id": "ping",
+    "type": "number"
+  },
+  {
+    "id": "protocol_version",
+    "type": "number"
+  },
+  {
+    "id": "item_usage_progress",
+    "type": "number"
+  },
+  {
+    "id": "entity_ticks_lived",
+    "type": "number"
+  },
+  {
+    "id": "arrows_in_body",
+    "type": "number"
+  },
+  {
+    "id": "age",
+    "type": "number"
+  },
+  {
+    "id": "steer_forward",
+    "type": "number"
+  },
+  {
+    "id": "steer_sideways",
+    "type": "number"
+  },
+  {
+    "id": "location",
+    "type": "location"
+  },
+  {
+    "id": "target_block_location",
+    "type": "location"
+  },
+  {
+    "id": "target_fluid_location",
+    "type": "location"
+  },
+  {
+    "id": "target_block_face",
+    "type": "text"
+  },
+  {
+    "id": "eye_location",
+    "type": "location"
+  },
+  {
+    "id": "x_coordinate",
+    "type": "number"
+  },
+  {
+    "id": "y_coordinate",
+    "type": "number"
+  },
+  {
+    "id": "z_coordinate",
+    "type": "number"
+  },
+  {
+    "id": "pitch",
+    "type": "number"
+  },
+  {
+    "id": "yaw",
+    "type": "number"
+  },
+  {
+    "id": "direction_of_view",
+    "type": "vector"
+  },
+  {
+    "id": "cardinal_direction",
+    "type": "text"
+  },
+  {
+    "id": "spawn_location",
+    "type": "location"
+  },
+  {
+    "id": "origin",
+    "type": "location"
+  },
+  {
+    "id": "velocity",
+    "type": "vector"
+  },
+  {
+    "id": "main_hand_item",
+    "type": "item"
+  },
+  {
+    "id": "off_hand_item",
+    "type": "item"
+  },
+  {
+    "id": "armor_items",
+    "type": "list",
+    "elementType": "item"
+  },
+  {
+    "id": "hotbar_items",
+    "type": "list",
+    "elementType": "item"
+  },
+  {
+    "id": "inventory_items",
+    "type": "list",
+    "elementType": "item"
+  },
+  {
+    "id": "custom_inventory_items",
+    "type": "list",
+    "elementType": "item"
+  },
+  {
+    "id": "cursor_item",
+    "type": "item"
+  },
+  {
+    "id": "saddle_item",
+    "type": "item",
+    "worksWith": [
+      "pig",
+      "horse",
+      "llama"
+    ]
+  },
+  {
+    "id": "entity_item",
+    "type": "item",
+    "worksWith": [
+      "item",
+      "thrown_potion",
+      "firework",
+      "arrow",
+      "falling_block",
+      "other_projectiles"
+    ]
+  },
+  {
+    "id": "name",
+    "type": "text"
+  },
+  {
+    "id": "uuid",
+    "type": "text"
+  },
+  {
+    "id": "display_name",
+    "type": "text"
+  },
+  {
+    "id": "entity_type",
+    "type": "text"
+  },
+  {
+    "id": "client_brand_name",
+    "type": "text",
+    "worksWith": [
+      "player"
+    ]
+  },
+  {
+    "id": "user_locale",
+    "type": "text",
+    "worksWith": [
+      "player"
+    ]
+  },
+  {
+    "id": "open_inventory_title",
+    "type": "text",
+    "worksWith": [
+      "player"
+    ]
+  },
+  {
+    "id": "gamemode",
+    "type": "text",
+    "worksWith": [
+      "player"
+    ]
+  },
+  {
+    "id": "last_damage_cause",
+    "type": "text"
+  },
+  {
+    "id": "potion_effects",
+    "type": "list",
+    "elementType": "potion"
+  },
+  {
+    "id": "vehicle",
+    "type": "text"
+  },
+  {
+    "id": "passengers",
+    "type": "list",
+    "elementType": "text"
+  },
+  {
+    "id": "lead_holder",
+    "type": "text"
+  },
+  {
+    "id": "attached_leads",
+    "type": "list",
+    "elementType": "text"
+  },
+  {
+    "id": "spawn_reason",
+    "type": "text"
+  },
+  {
+    "id": "main_hand",
+    "type": "text",
+    "worksWith": [
+      "player"
+    ]
+  },
+  {
+    "id": "event_block_location",
+    "type": "location",
+    "worksWith": [
+      "interact_events",
+      "place_break_events",
+      "projectile_hit_event",
+      "world_block_events"
+    ]
+  },
+  {
+    "id": "event_block_face",
+    "type": "text",
+    "worksWith": [
+      "interact_events",
+      "place_break_events",
+      "projectile_hit_event",
+      "piston_events"
+    ]
+  },
+  {
+    "id": "event_blocks_involved",
+    "type": "list",
+    "elementType": "location",
+    "worksWith": [
+      "explosion_events",
+      "piston_events"
+    ]
+  },
+  {
+    "id": "event_interaction",
+    "type": "text",
+    "worksWith": [
+      "right_click_event",
+      "left_click_event",
+      "interact_event"
+    ]
+  },
+  {
+    "id": "event_new_location",
+    "type": "location",
+    "worksWith": [
+      "player_move_event"
+    ]
+  },
+  {
+    "id": "event_damage",
+    "type": "number",
+    "worksWith": [
+      "player_take_damage_event",
+      "entity_take_damage_event",
+      "vehicle_take_damage_event"
+    ]
+  },
+  {
+    "id": "event_damage_cause",
+    "type": "text",
+    "worksWith": [
+      "player_take_damage_event",
+      "entity_take_damage_event",
+      "vehicle_take_damage_event"
+    ]
+  },
+  {
+    "id": "event_chat_message",
+    "type": "text",
+    "worksWith": [
+      "player_chat_event"
+    ]
+  },
+  {
+    "id": "event_message",
+    "type": "text",
+    "worksWith": [
+      "player_join_event",
+      "player_quit_event",
+      "player_death_event"
+    ]
+  },
+  {
+    "id": "event_heal_amount",
+    "type": "number",
+    "worksWith": [
+      "player_heal_event",
+      "entity_heal_event"
+    ]
+  },
+  {
+    "id": "event_heal_cause",
+    "type": "text",
+    "worksWith": [
+      "player_heal_event",
+      "entity_heal_event"
+    ]
+  },
+  {
+    "id": "event_power",
+    "type": "number",
+    "worksWith": [
+      "player_shoot_bow_event",
+      "player_horse_jump_event"
+    ]
+  },
+  {
+    "id": "event_item",
+    "type": "item",
+    "worksWith": [
+      "item_events",
+      "player_fish_event",
+      "player_edit_book_event",
+      "player_shoot_bow_event"
+    ]
+  },
+  {
+    "id": "event_equipment_slot",
+    "type": "text",
+    "worksWith": [
+      "right_click_event",
+      "left_click_event",
+      "interact_event"
+    ]
+  },
+  {
+    "id": "event_slot",
+    "type": "number",
+    "worksWith": [
+      "player_change_slot_event",
+      "player_click_own_inventory_event",
+      "player_click_inventory_event",
+      "player_craft_item_event"
+    ]
+  },
+  {
+    "id": "event_hotbar_slot",
+    "type": "number",
+    "worksWith": [
+      "player_change_slot_event",
+      "player_own_inventory_click_event",
+      "player_other_inventory_click_event"
+    ]
+  },
+  {
+    "id": "event_added_items",
+    "type": "dictionary",
+    "keyType": "number",
+    "valueType": "item",
+    "worksWith": [
+      "player_drag_inventory_event"
+    ]
+  },
+  {
+    "id": "event_slot_type",
+    "type": "text",
+    "worksWith": [
+      "player_own_inventory_click_event",
+      "player_other_inventory_click_event"
+    ]
+  },
+  {
+    "id": "event_close_inventory_cause",
+    "type": "text",
+    "worksWith": [
+      "player_close_inventory_event"
+    ]
+  },
+  {
+    "id": "event_inventory_click_type",
+    "type": "text",
+    "worksWith": [
+      "player_click_own_inventory_event",
+      "player_click_inventory_event"
+    ]
+  },
+  {
+    "id": "event_inventory_action",
+    "type": "text",
+    "worksWith": [
+      "player_own_inventory_click_event",
+      "player_other_inventory_click_event"
+    ]
+  },
+  {
+    "id": "event_drag_type",
+    "type": "text",
+    "worksWith": [
+      "player_drag_inventory_event"
+    ]
+  },
+  {
+    "id": "event_slots_involved",
+    "type": "list",
+    "elementType": "number",
+    "worksWith": [
+      "player_drag_inventory_event"
+    ]
+  },
+  {
+    "id": "event_fish_state",
+    "type": "text",
+    "worksWith": [
+      "player_fish_event"
+    ]
+  },
+  {
+    "id": "event_experience",
+    "type": "number",
+    "worksWith": [
+      "player_fish_event",
+      "player_pickup_experience_event",
+      "death_events"
+    ]
+  },
+  {
+    "id": "event_hanging_break_cause",
+    "type": "text",
+    "worksWith": [
+      "hanging_break_event"
+    ]
+  },
+  {
+    "id": "event_time_skip_reason",
+    "type": "text",
+    "worksWith": [
+      "time_skip_event"
+    ]
+  },
+  {
+    "id": "event_time_skip_amount",
+    "type": "number",
+    "worksWith": [
+      "time_skip_event"
+    ]
+  },
+  {
+    "id": "event_food_level",
+    "type": "number",
+    "worksWith": [
+      "player_food_level_change_event"
+    ]
+  },
+  {
+    "id": "event_projectile_item",
+    "type": "item",
+    "worksWith": [
+      "player_shoot_bow_event"
+    ]
+  },
+  {
+    "id": "event_teleport_cause",
+    "type": "text",
+    "worksWith": [
+      "player_teleport_event"
+    ]
+  },
+  {
+    "id": "player_count",
+    "type": "number"
+  },
+  {
+    "id": "cpu_usage",
+    "type": "number"
+  },
+  {
+    "id": "server_tps",
+    "type": "number"
+  },
+  {
+    "id": "timestamp",
+    "type": "number"
+  },
+  {
+    "id": "server_current_tick",
+    "type": "number"
+  },
+  {
+    "id": "selection_size",
+    "type": "number"
+  },
+  {
+    "id": "selection_target_names",
+    "type": "list",
+    "elementType": "text"
+  },
+  {
+    "id": "selection_target_uuids",
+    "type": "list",
+    "elementType": "text"
+  },
+  {
+    "id": "url_response",
+    "type": "text",
+    "worksWith": [
+      "web_response_event"
+    ]
+  },
+  {
+    "id": "url_response_code",
+    "type": "number",
+    "worksWith": [
+      "web_response_event"
+    ]
+  },
+  {
+    "id": "url",
+    "type": "text",
+    "worksWith": [
+      "web_response_event"
+    ]
+  },
+  {
+    "id": "world_time",
+    "type": "number"
+  },
+  {
+    "id": "world_weather",
+    "type": "text"
+  },
+  {
+    "id": "server_stopped_time",
+    "type": "number"
+  },
+  {
+    "id": "action_count_per_tick",
+    "type": "number"
+  },
+  {
+    "id": "owner_uuid",
+    "type": "text"
+  },
+  {
+    "id": "world_size",
+    "type": "number"
+  },
+  {
+    "id": "world_id",
+    "type": "text"
+  }
+]

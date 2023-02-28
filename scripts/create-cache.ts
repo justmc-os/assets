@@ -22,7 +22,7 @@ const API = new Gitlab({
 });
 
 const IGNORED_ACTIONS = ['Actions.kt', 'DummyAction.kt'];
-const ACTIONS_PATH =
+const ACTIONS_FOLDER_PATH =
   'justmc-creative-plus/src/main/kotlin/ru/justmc/creativeplus/action';
 
 const IGNORED_ACTION_MENUS = [
@@ -64,13 +64,15 @@ const getFile = async (path: string) => {
 
   const actionFiles = (
     await API.Repositories.tree(PROJECT_ID, {
-      path: ACTIONS_PATH,
+      path: ACTIONS_FOLDER_PATH,
       recursive: true,
     })
   ).filter((file) => {
     if (file.type !== 'blob') return false;
 
-    return !IGNORED_ACTIONS.some((ignored) => file.path.endsWith(ignored));
+    return !IGNORED_ACTIONS.some((ignored) =>
+      file.path.endsWith(`/${ignored}`)
+    );
   });
 
   info('caching actions...');
@@ -93,7 +95,9 @@ const getFile = async (path: string) => {
   ).filter((file) => {
     if (file.type !== 'blob') return false;
 
-    return !IGNORED_ACTION_MENUS.some((ignored) => file.path.endsWith(ignored));
+    return !IGNORED_ACTION_MENUS.some((ignored) =>
+      file.path.endsWith(`/${ignored}`)
+    );
   });
 
   info('caching action menus...');

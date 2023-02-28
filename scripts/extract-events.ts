@@ -14,9 +14,12 @@ import {
   EVENT_ICONS_CACHE_FILE,
   TRIGGER_MENUS_CACHE_DIR,
   Dictionary,
+  PATCHES_DIR,
 } from './common';
 
 ///////////////////////////////////////////////////////////////////////////////
+
+const EVENTS_PATCHES_FILE = path.resolve(PATCHES_DIR, 'events.json');
 
 const MENU_TRIGGERS =
   /(?<!\.)trigger\(\s*Triggers\.(.*?),(.*?)(?=trigger|open|subcategory)/gms;
@@ -34,13 +37,16 @@ type EventMenuIcon = CachedIcon & {
 const getStrings = (content: string, regex: RegExp) =>
   matches(content.match(regex)?.[1] || '', STRING).map(([, key]) => key);
 
-const extractTriggerMenuIcons = (triggerMenuFile: string) => {
+const extractTriggerMenuIcons = (
+  triggerMenuFile: string,
+  patches: Dictionary
+) => {
   return matches(triggerMenuFile, MENU_TRIGGERS).reduce<
     Dictionary<EventMenuIcon>
   >((acc, [, name, iconPart]) => {
     const match = iconPart.match(MENU_TRIGGER_MATERIAL);
     if (!match) {
-      error(`Couldn't extract icon metadata for trigger: ${name}`);
+      error(`Could not extract icon metadata for trigger: ${name}`);
       return acc;
     }
 
@@ -48,17 +54,20 @@ const extractTriggerMenuIcons = (triggerMenuFile: string) => {
     const hasGlint = iconPart.includes('addUnsafeEnchantment');
     const worksWith = getStrings(iconPart, WORK_WITH_KEYS);
     const additionalInfo = getStrings(iconPart, ADDITIONAL_INFO_KEYS);
+    const id = name.toLowerCase();
+    const patch = patches[id];
 
     return {
       ...acc,
       [name]: {
-        id: name.toLowerCase(),
+        id,
         type: 'event',
         material,
         amount: 1,
         hasGlint,
         worksWith,
         additionalInfo,
+        ...(patch ? patch.icon : {}),
       },
     };
   }, {});
@@ -73,6 +82,10 @@ const REGISTERED_EVENT_REGEX = /val\s*(.*?)\s*=\s*register.*\("(.*)"\)/g;
 
   const triggerMenuFiles = await fs.readdir(TRIGGER_MENUS_CACHE_DIR);
 
+  const patches: Dictionary = JSON.parse(
+    await fs.readFile(EVENTS_PATCHES_FILE, 'utf-8')
+  );
+
   let icons: Dictionary<EventMenuIcon> = {};
   await Promise.all(
     triggerMenuFiles.map(async (file) => {
@@ -80,7 +93,10 @@ const REGISTERED_EVENT_REGEX = /val\s*(.*?)\s*=\s*register.*\("(.*)"\)/g;
         await fs.readFile(path.resolve(TRIGGER_MENUS_CACHE_DIR, file), 'utf-8')
       );
 
-      icons = { ...icons, ...extractTriggerMenuIcons(triggersMenuFile) };
+      icons = {
+        ...icons,
+        ...extractTriggerMenuIcons(triggersMenuFile, patches),
+      };
     })
   );
 
@@ -101,7 +117,9 @@ const REGISTERED_EVENT_REGEX = /val\s*(.*?)\s*=\s*register.*\("(.*)"\)/g;
     .filter(([, id]) => !id.includes('dummy'))
     .map(([name, id]) => {
       const icon = icons[name];
-      if (!icon) return { id };
+      if (!icon) {
+        return { id };
+      }
 
       return {
         id,

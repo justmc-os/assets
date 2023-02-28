@@ -53,12 +53,15 @@ type Enums = Dictionary<string[]>;
 const MENU_ACTIONS =
   /(?<!\.)action\(\s*(.*?),(.*?)(?=action|open|subcategory)/gms;
 
+const MENU_ACTION_SUBCATEGORY = /translatable.*subcategory\.(.*)\./;
+
 const MENU_ACTION_MATERIAL = /Material.(.*?)\s*(?:\,|\))/;
 const WORK_WITH_KEYS = /workWithKeys\s*=\s*(.*?)\)/;
 const ADDITIONAL_INFO_KEYS = /additionalInfoKeys\s*=\s*(.*?)\)/;
 const STRING = /"(.*?)"/gms;
 
 type ActionMenuIcon = CachedIcon & {
+  subcategory: string | null;
   worksWith: string[];
   additionalInfo: string[];
 };
@@ -67,12 +70,15 @@ const getStrings = (content: string, regex: RegExp) =>
   matches(content.match(regex)?.[1] || '', STRING).map(([, key]) => key);
 
 const extractActionMenuIcons = (actionMenuFile: string) => {
+  const subcategory =
+    actionMenuFile.match(MENU_ACTION_SUBCATEGORY)?.[1] || null;
+
   return matches(actionMenuFile, MENU_ACTIONS).reduce<
     Dictionary<ActionMenuIcon>
   >((acc, [, name, iconPart]) => {
     const match = iconPart.match(MENU_ACTION_MATERIAL);
     if (!match) {
-      error(`Couldn't extract icon metadata for action: ${name}`);
+      error(`Could not extract icon metadata for action: ${name}`);
       return acc;
     }
 
@@ -88,6 +94,7 @@ const extractActionMenuIcons = (actionMenuFile: string) => {
         type: 'action',
         material,
         amount: 1,
+        subcategory,
         hasGlint,
         worksWith,
         additionalInfo,
@@ -146,7 +153,7 @@ const getArguments = (
       const _valueSlots = body.match(ARGUMENT_VALUE_SLOTS)?.[1];
       if (!_valueSlots)
         return error(
-          `Couldn't get value slots of argument ${chalk.cyan(
+          `Could not get value slots of argument ${chalk.cyan(
             id
           )} in action ${action}`
         );
@@ -156,7 +163,7 @@ const getArguments = (
         const values = _enums[type === 'boolean' ? 'Boolean' : enumName];
         if (!values)
           return error(
-            `Couldn't get values of enum argument ${chalk.cyan(
+            `Could not get values of enum argument ${chalk.cyan(
               enumName
             )} in action ${action}`
           );
@@ -175,7 +182,7 @@ const getArguments = (
       const _descriptionSlots = body.match(ARGUMENT_DESCRIPTION_SLOTS)?.[1];
       if (!_descriptionSlots)
         return error(
-          `Couldn't get description slots of argument ${chalk.cyan(
+          `Could not get description slots of argument ${chalk.cyan(
             id
           )} in action ${action}`
         );
@@ -289,24 +296,33 @@ const getArguments = (
       );
 
       const ni = matches(contents, ACTION_NAME)[0];
-      if (!ni) return error(`Couldn't find action in file: ${file}`);
+      if (!ni) return error(`Could not find action in file: ${file}`);
       const [, name, id] = ni;
       const patch = patches[id];
+      const patchHasIcon = patch && 'icon' in patch;
 
       if (!icons[name]) {
-        if (!patch || !('icons' in patch))
-          return warn(`Couldn't find ${chalk.cyan('icon')} for action: ${id}`);
+        if (!patchHasIcon)
+          return error(
+            `Could not find ${chalk.cyan('icon')} for action: ${id}`
+          );
 
-        icons[name] = patch.icons;
-      } else icons[name].id = id;
+        icons[name] = patch.icon;
+        icons[name].type = 'action';
+      } else if (patchHasIcon) {
+        icons[name] = { ...icons[name], ...patch.icon };
+      }
+
+      icons[name].id = id;
 
       const ct = naiveActionTypeFromId(id);
-      if (!ct) return error(`Couldn't find category for action: ${id}`);
+      if (!ct) return error(`Could not find category for action: ${id}`);
       const [category, type] = ct;
 
       return {
         id,
         category,
+        subcategory: icons[name]?.subcategory || null,
         type,
         args: getArguments(id, enums, patch?.['args'] || {}, contents),
         ...patch,

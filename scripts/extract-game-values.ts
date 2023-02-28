@@ -43,7 +43,7 @@ const extractGameValueMenuIcons = (gameValueMenuFile: string) => {
   >((acc, [, name, iconPart]) => {
     const match = iconPart.match(MENU_GAME_VALUE_MATERIAL);
     if (!match) {
-      error(`Couldn't extract icon metadata for game value: ${name}`);
+      error(`Could not extract icon metadata for game value: ${name}`);
       return acc;
     }
 
@@ -113,7 +113,7 @@ const REGISTERED_GAME_VALUES =
   const gameValues = registeredGameValues.map((_gameValue) => {
     const icon = menuIcons[_gameValue.name];
     if (!icon)
-      error(`Couldn't find menu icon for game value: ${_gameValue.id}`);
+      error(`Could not find menu icon for game value: ${_gameValue.id}`);
 
     const patch = patches[_gameValue.id];
 

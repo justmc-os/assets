@@ -23,6 +23,11 @@ export type CachedIcon = {
   material: string;
   amount: number;
   hasGlint: boolean;
+
+  /**
+   * Player head texture
+   */
+  texture?: string;
 };
 
 export const fileExists = async (path: string) =>

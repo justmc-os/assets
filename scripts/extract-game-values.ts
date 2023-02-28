@@ -37,7 +37,10 @@ type GameValueMenuIcon = CachedIcon & {
   worksWith: string[];
 };
 
-const extractGameValueMenuIcons = (gameValueMenuFile: string) => {
+const extractGameValueMenuIcons = (
+  gameValueMenuFile: string,
+  patches: Dictionary
+) => {
   return matches(gameValueMenuFile, MENU_GAME_VALUES).reduce<
     Dictionary<GameValueMenuIcon>
   >((acc, [, name, iconPart]) => {
@@ -50,16 +53,19 @@ const extractGameValueMenuIcons = (gameValueMenuFile: string) => {
     const [, material, amount] = match;
     const hasGlint = iconPart.includes('addUnsafeEnchantment');
     const worksWith = matches(iconPart, STRING).map(([, key]) => key);
+    const id = name.toLowerCase();
+    const patch = patches[id];
 
     return {
       ...acc,
       [name]: {
-        id: name.toLowerCase(),
+        id,
         type: 'game_value',
         material,
         amount: +amount || 1,
         hasGlint,
         worksWith,
+        ...(patch ? patch.icon : {}),
       },
     };
   }, {});
@@ -77,7 +83,11 @@ const REGISTERED_GAME_VALUES =
     await fs.readFile(CACHE_GAME_VALUES_MENU_FILE, 'utf-8')
   );
 
-  const menuIcons = extractGameValueMenuIcons(gameValuesMenuFile);
+  const patches: Dictionary = JSON.parse(
+    await fs.readFile(GAME_VALUES_PATCHES_FILE, 'utf-8')
+  );
+
+  const menuIcons = extractGameValueMenuIcons(gameValuesMenuFile, patches);
   await fs.writeFile(GAME_VALUE_ICONS_CACHE_FILE, toPrettyPrintJson(menuIcons));
 
   success('cached game value icons');
@@ -106,23 +116,22 @@ const REGISTERED_GAME_VALUES =
 
   /////////////////////////////////////////////////////////////////////////////
 
-  const patches: Dictionary = JSON.parse(
-    await fs.readFile(GAME_VALUES_PATCHES_FILE, 'utf-8')
-  );
-
   const gameValues = registeredGameValues.map((_gameValue) => {
     const icon = menuIcons[_gameValue.name];
     if (!icon)
       error(`Could not find menu icon for game value: ${_gameValue.id}`);
 
-    const patch = patches[_gameValue.id];
-
-    const gameValue = {
+    let gameValue = {
       id: _gameValue.id,
       type: _gameValue.type,
-      ...(patch || {}),
       ...(icon.worksWith.length ? { worksWith: icon.worksWith } : {}),
     } as GameValue;
+
+    const patch = patches[_gameValue.id];
+    if (patch) {
+      const { icon, ..._patch } = patch;
+      gameValue = { ...gameValue, ...patch };
+    }
 
     if (gameValue.type === ValueTypes.DICTIONARY)
       if (!gameValue.keyType || !gameValue.valueType)

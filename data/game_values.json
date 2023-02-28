@@ -329,11 +329,11 @@
   {
     "id": "event_blocks_involved",
     "type": "list",
-    "elementType": "location",
     "worksWith": [
       "explosion_events",
       "piston_events"
-    ]
+    ],
+    "elementType": "location"
   },
   {
     "id": "event_interaction",
@@ -450,11 +450,11 @@
   {
     "id": "event_added_items",
     "type": "dictionary",
-    "keyType": "number",
-    "valueType": "item",
     "worksWith": [
       "player_drag_inventory_event"
-    ]
+    ],
+    "keyType": "number",
+    "valueType": "item"
   },
   {
     "id": "event_slot_type",
@@ -497,10 +497,10 @@
   {
     "id": "event_slots_involved",
     "type": "list",
-    "elementType": "number",
     "worksWith": [
       "player_drag_inventory_event"
-    ]
+    ],
+    "elementType": "number"
   },
   {
     "id": "event_fish_state",
@@ -562,7 +562,10 @@
   },
   {
     "id": "player_count",
-    "type": "number"
+    "type": "number",
+    "icon": {
+      "texture": "none"
+    }
   },
   {
     "id": "cpu_usage",
@@ -599,7 +602,10 @@
     "type": "text",
     "worksWith": [
       "web_response_event"
-    ]
+    ],
+    "icon": {
+      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkZDRmZTRhNDI5YWJkNjY1ZGZkYjNlMjEzMjFkNmVmYTZhNmI1ZTdiOTU2ZGI5YzVkNTljOWVmYWIyNSJ9fX0="
+    }
   },
   {
     "id": "url_response_code",

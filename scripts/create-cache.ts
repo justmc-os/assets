@@ -70,9 +70,7 @@ const getFile = async (path: string) => {
   ).filter((file) => {
     if (file.type !== 'blob') return false;
 
-    return !IGNORED_ACTIONS.some((ignored) =>
-      file.path.endsWith(`/${ignored}`)
-    );
+    return !IGNORED_ACTIONS.some((ignored) => file.path.endsWith(ignored));
   });
 
   info('caching actions...');

@@ -18,5 +18,15 @@
     "icon": {
       "texture": "none"
     }
+  },
+  "player_vehicle_jump": {
+    "icon": {
+      "texture": "MINECART"
+    }
+  },
+  "block_ignite": {
+    "icon": {
+      "texture": "FIRE_CHARGE"
+    }
   }
 }

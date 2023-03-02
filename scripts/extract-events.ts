@@ -15,6 +15,7 @@ import {
   TRIGGER_MENUS_CACHE_DIR,
   Dictionary,
   PATCHES_DIR,
+  warn,
 } from './common';
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -27,9 +28,12 @@ const MENU_TRIGGERS =
 const MENU_TRIGGER_MATERIAL = /Material.(.*?)\s*(?:\,|\))/;
 const WORK_WITH_KEYS = /workWithKeys\s*=\s*(.*?)\)/;
 const ADDITIONAL_INFO_KEYS = /additionalInfoKeys\s*=\s*(.*?)\)/;
+const MENU_TRIGGER_CATEGORY = /creative_plus.category.(.*)_event/;
 const STRING = /"(.*?)"/gms;
 
 type EventMenuIcon = CachedIcon & {
+  category: string;
+  cancellable: boolean;
   worksWith: string[];
   additionalInfo: string[];
 };
@@ -41,6 +45,8 @@ const extractTriggerMenuIcons = (
   triggerMenuFile: string,
   patches: Dictionary
 ) => {
+  const category = triggerMenuFile.match(MENU_TRIGGER_CATEGORY)?.[1] || null;
+
   return matches(triggerMenuFile, MENU_TRIGGERS).reduce<
     Dictionary<EventMenuIcon>
   >((acc, [, name, iconPart]) => {
@@ -52,6 +58,7 @@ const extractTriggerMenuIcons = (
 
     const [, material] = match;
     const hasGlint = iconPart.includes('addUnsafeEnchantment');
+    const cancellable = iconPart.includes('true');
     const worksWith = getStrings(iconPart, WORK_WITH_KEYS);
     const additionalInfo = getStrings(iconPart, ADDITIONAL_INFO_KEYS);
     const id = name.toLowerCase();
@@ -65,6 +72,8 @@ const extractTriggerMenuIcons = (
         material,
         amount: 1,
         hasGlint,
+        category,
+        cancellable,
         worksWith,
         additionalInfo,
         ...(patch ? patch.icon : {}),
@@ -100,10 +109,6 @@ const REGISTERED_EVENT_REGEX = /val\s*(.*?)\s*=\s*register.*\("(.*)"\)/g;
     })
   );
 
-  await fs.writeFile(EVENT_ICONS_CACHE_FILE, toPrettyPrintJson(icons));
-
-  success('cached event icons');
-
   /////////////////////////////////////////////////////////////////////////////
 
   info('extracting events...');
@@ -116,19 +121,33 @@ const REGISTERED_EVENT_REGEX = /val\s*(.*?)\s*=\s*register.*\("(.*)"\)/g;
     .map(([, name, id]) => [name, id])
     .filter(([, id]) => !id.includes('dummy'))
     .map(([name, id]) => {
-      const icon = icons[name];
+      let icon = icons[name];
+
       if (!icon) {
-        return { id };
+        const patch = patches[id];
+        if (patch && patch.icon) {
+          icon = patch.icon;
+        } else {
+          warn('Not found icon for event', id);
+          return { id };
+        }
       }
 
+      icon.id = id;
       return {
         id,
-        ...(icon.worksWith.length ? { worksWith: icon.worksWith } : {}),
-        ...(icon.additionalInfo.length
+        category: icon.category,
+        cancellable: icon.cancellable,
+        ...(icon.worksWith?.length ? { worksWith: icon.worksWith } : {}),
+        ...(icon.additionalInfo?.length
           ? { worksWith: icon.additionalInfo }
           : {}),
       };
     });
+
+  await fs.writeFile(EVENT_ICONS_CACHE_FILE, toPrettyPrintJson(icons));
+
+  success('cached event icons');
 
   await fs.writeFile(EVENTS_FILE, toPrettyPrintJson(events));
 

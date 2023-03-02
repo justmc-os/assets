@@ -1,87 +1,141 @@
 [
   {
-    "id": "player_join"
+    "id": "player_join",
+    "category": "player",
+    "cancellable": false
   },
   {
-    "id": "player_quit"
+    "id": "player_quit",
+    "category": "player",
+    "cancellable": false
   },
   {
-    "id": "player_rejoin"
+    "id": "player_rejoin",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_chat"
+    "id": "player_chat",
+    "category": "player",
+    "cancellable": true
   },
   {
     "id": "player_interact",
+    "category": "player",
+    "cancellable": true,
     "worksWith": [
       "right_click_and_left_click"
     ]
   },
   {
-    "id": "player_right_click"
+    "id": "player_right_click",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_left_click"
+    "id": "player_left_click",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_place_block"
+    "id": "player_place_block",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_break_block"
+    "id": "player_break_block",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_right_click_entity"
+    "id": "player_right_click_entity",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_right_click_player"
+    "id": "player_right_click_player",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_imbue_potion_cloud"
+    "id": "player_imbue_potion_cloud",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_pickup_projectile"
+    "id": "player_pickup_projectile",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_pickup_experience"
+    "id": "player_pickup_experience",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_tame_entity"
+    "id": "player_tame_entity",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_leash_entity"
+    "id": "player_leash_entity",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_start_spectating_entity"
+    "id": "player_start_spectating_entity",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_stop_spectating_entity"
+    "id": "player_stop_spectating_entity",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_open_inventory"
+    "id": "player_open_inventory",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_click_inventory"
+    "id": "player_click_inventory",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_drag_inventory"
+    "id": "player_drag_inventory",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_click_own_inventory"
+    "id": "player_click_own_inventory",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_craft_item"
+    "id": "player_craft_item",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_close_inventory"
+    "id": "player_close_inventory",
+    "category": "player",
+    "cancellable": false
   },
   {
-    "id": "player_swap_hands"
+    "id": "player_swap_hands",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_change_slot"
+    "id": "player_change_slot",
+    "category": "player",
+    "cancellable": true
   },
   {
     "id": "player_shot_bow",
+    "category": "player",
+    "cancellable": true,
     "worksWith": [
       "bow",
       "crossbow"
@@ -89,6 +143,8 @@
   },
   {
     "id": "player_launch_projectile",
+    "category": "player",
+    "cancellable": true,
     "worksWith": [
       "eggs",
       "snowball",
@@ -96,13 +152,19 @@
     ]
   },
   {
-    "id": "player_pickup_item"
+    "id": "player_pickup_item",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_drop_item"
+    "id": "player_drop_item",
+    "category": "player",
+    "cancellable": true
   },
   {
     "id": "player_consume_item",
+    "category": "player",
+    "cancellable": true,
     "worksWith": [
       "food",
       "potions",
@@ -110,128 +172,204 @@
     ]
   },
   {
-    "id": "player_break_item"
+    "id": "player_break_item",
+    "category": "player",
+    "cancellable": false
   },
   {
-    "id": "player_edit_book"
+    "id": "player_edit_book",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_fish"
+    "id": "player_fish",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_move"
+    "id": "player_move",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_jump"
+    "id": "player_jump",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_sneak"
+    "id": "player_sneak",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_unsneak"
+    "id": "player_unsneak",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_teleport"
+    "id": "player_teleport",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_start_sprint"
+    "id": "player_start_sprint",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_stop_sprint"
+    "id": "player_stop_sprint",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_start_flight"
+    "id": "player_start_flight",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_stop_flight"
+    "id": "player_stop_flight",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_riptide"
+    "id": "player_riptide",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_dismount"
+    "id": "player_dismount",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_horse_jump"
+    "id": "player_horse_jump",
+    "category": "player",
+    "cancellable": true
   },
   {
     "id": "player_vehicle_jump"
   },
   {
-    "id": "player_take_damage"
+    "id": "player_take_damage",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_damage_player"
+    "id": "player_damage_player",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "entity_damage_player"
+    "id": "entity_damage_player",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_damage_entity"
+    "id": "player_damage_entity",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_heal"
+    "id": "player_heal",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_food_level_change"
+    "id": "player_food_level_change",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_projectile_hit"
+    "id": "player_projectile_hit",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "projectile_damage_player"
+    "id": "projectile_damage_player",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_death"
+    "id": "player_death",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_kill_player"
+    "id": "player_kill_player",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "player_kill_mob"
+    "id": "player_kill_mob",
+    "category": "player",
+    "cancellable": true
   },
   {
-    "id": "mob_kill_player"
+    "id": "mob_kill_player",
+    "category": "player",
+    "cancellable": true
   },
   {
     "id": "player_respawn",
+    "category": "player",
+    "cancellable": false,
     "worksWith": [
       "wait_before_interacting"
     ]
   },
   {
-    "id": "entity_spawn"
+    "id": "entity_spawn",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_removed_from_world"
+    "id": "entity_removed_from_world",
+    "category": "entity",
+    "cancellable": false
   },
   {
-    "id": "entity_damage_entity"
+    "id": "entity_damage_entity",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_kill_entity"
+    "id": "entity_kill_entity",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_take_damage"
+    "id": "entity_take_damage",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_heal"
+    "id": "entity_heal",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_death"
+    "id": "entity_death",
+    "category": "entity",
+    "cancellable": true
   },
   {
     "id": "entity_spell_cast",
+    "category": "entity",
+    "cancellable": true,
     "worksWith": [
       "evoker",
       "illusioner"
     ]
   },
   {
-    "id": "firework_explode"
+    "id": "firework_explode",
+    "category": "entity",
+    "cancellable": true
   },
   {
     "id": "hanging_break",
+    "category": "entity",
+    "cancellable": true,
     "worksWith": [
       "item_frame",
       "painting",
@@ -239,62 +377,96 @@
     ]
   },
   {
-    "id": "projectile_damage_entity"
+    "id": "projectile_damage_entity",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "projectile_kill_entity"
+    "id": "projectile_kill_entity",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "projectile_hit"
+    "id": "projectile_hit",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_drop_item"
+    "id": "entity_drop_item",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_pickup_item"
+    "id": "entity_pickup_item",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "item_despawn"
+    "id": "item_despawn",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "vehicle_take_damage"
+    "id": "vehicle_take_damage",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "block_fall"
+    "id": "block_fall",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "entity_interact"
+    "id": "entity_interact",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "dispenser_shear_sheep"
+    "id": "dispenser_shear_sheep",
+    "category": "entity",
+    "cancellable": true
   },
   {
-    "id": "world_start"
+    "id": "world_start",
+    "category": "world",
+    "cancellable": false
   },
   {
-    "id": "world_stop"
+    "id": "world_stop",
+    "category": "world",
+    "cancellable": false
   },
   {
     "id": "time_skip",
+    "category": "world",
+    "cancellable": true,
     "worksWith": [
       "sleep",
       "code"
     ]
   },
   {
-    "id": "world_web_response"
+    "id": "world_web_response",
+    "category": "world",
+    "cancellable": false
   },
   {
     "id": "block_ignite"
   },
   {
-    "id": "block_burn"
+    "id": "block_burn",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "block_damage"
+    "id": "block_damage",
+    "category": "world",
+    "cancellable": true
   },
   {
     "id": "block_fade",
+    "category": "world",
+    "cancellable": true,
     "worksWith": [
       "snow",
       "ice",
@@ -305,28 +477,44 @@
     ]
   },
   {
-    "id": "tnt_prime"
+    "id": "tnt_prime",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "block_explode"
+    "id": "block_explode",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "entity_explode"
+    "id": "entity_explode",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "entity_explosion"
+    "id": "entity_explosion",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "block_piston_extend"
+    "id": "block_piston_extend",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "block_piston_retract"
+    "id": "block_piston_retract",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "leaves_decay"
+    "id": "leaves_decay",
+    "category": "world",
+    "cancellable": true
   },
   {
     "id": "block_grow",
+    "category": "world",
+    "cancellable": true,
     "worksWith": [
       "seeds",
       "pumpkins_and_melons",
@@ -335,22 +523,32 @@
   },
   {
     "id": "block_flow",
+    "category": "world",
+    "cancellable": true,
     "worksWith": [
       "liquids",
       "dragon_egg"
     ]
   },
   {
-    "id": "block_fertilize"
+    "id": "block_fertilize",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "redstone_level_change"
+    "id": "redstone_level_change",
+    "category": "world",
+    "cancellable": false
   },
   {
-    "id": "brew_complete"
+    "id": "brew_complete",
+    "category": "world",
+    "cancellable": true
   },
   {
     "id": "block_form",
+    "category": "world",
+    "cancellable": true,
     "worksWith": [
       "snow",
       "ice",
@@ -360,6 +558,8 @@
   },
   {
     "id": "block_spread",
+    "category": "world",
+    "cancellable": true,
     "worksWith": [
       "mushrooms",
       "fire"
@@ -367,36 +567,56 @@
   },
   {
     "id": "block_form_by_entity",
+    "category": "world",
+    "cancellable": true,
     "worksWith": [
       "snowman",
       "frost_walker"
     ]
   },
   {
-    "id": "portal_create"
+    "id": "portal_create",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "bell_ring"
+    "id": "bell_ring",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "entity_bell_ring"
+    "id": "entity_bell_ring",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "note_play"
+    "id": "note_play",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "dispenser_dispense_item"
+    "id": "dispenser_dispense_item",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "dispenser_equip_armor"
+    "id": "dispenser_equip_armor",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "fluid_level_change"
+    "id": "fluid_level_change",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "sponge_absorb"
+    "id": "sponge_absorb",
+    "category": "world",
+    "cancellable": true
   },
   {
-    "id": "falling_block_land"
+    "id": "falling_block_land",
+    "category": "world",
+    "cancellable": true
   }
 ]

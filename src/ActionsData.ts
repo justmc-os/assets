@@ -1,32 +1,4 @@
 import Action from './Action';
-import ActionArgument, {
-  ActionArgumentType,
-  ActionArgumentTypes,
-  WithDefaultValue,
-} from './ActionArgument';
-
-// type ExcludeKeysWithValue<T, V> = {
-//   [K in keyof T]: T[K] extends V ? never : K;
-// }[keyof T];
-
-// type ExcludeValues<T, V> = Pick<T, ExcludeKeysWithValue<T, V>>;
-
-// type GetArgumentByType<U extends ActionArgumentType> = Extract<
-//   ActionArgument,
-//   { type: U }
-// >;
-
-// type GetDefaultValue<T> = T extends WithDefaultValue<infer V> ? V : never;
-
-// export type Argument2DefaultValueMap = ExcludeValues<
-//   {
-//     [K in Exclude<
-//       ActionArgumentType,
-//       ActionArgumentTypes['ENUM']
-//     >]: GetDefaultValue<GetArgumentByType<K>>;
-//   },
-//   never
-// >;
 
 export const ActionCategories = {
   PLAYER: 'player',
@@ -55,17 +27,19 @@ export const ActionCategories = {
 export type ActionCategories = typeof ActionCategories;
 export type ActionCategory = ActionCategories[keyof ActionCategories];
 
+const CATEGORIES = [
+  ActionCategories.CONTROLLER,
+  ...Object.values(ActionCategories).filter(
+    (c) => c != ActionCategories.CONTROLLER
+  ),
+];
+
 export const actionCategoryFromId = (
   id: string
 ): ActionCategory | undefined => {
-  return Object.values(ActionCategories).find((category) =>
-    id.startsWith(category)
-  );
+  return CATEGORIES.find((category) => id.startsWith(category));
 };
 
-// type ActionsData = {
-// defaultValues: Argument2DefaultValueMap;
 type ActionsData = Record<ActionCategory, Action[]>;
-// };
 
 export default ActionsData;

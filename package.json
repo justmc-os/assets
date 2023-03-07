@@ -12,8 +12,7 @@
     "extract:game-values": "ts-node scripts/extract-game-values",
     "extract:actions": "ts-node scripts/extract-actions",
     "extract": "yarn extract:events && yarn extract:game-values && yarn extract:actions",
-    "generate": "ts-node scripts/generate-index",
-    "update": "yarn create:cache && yarn extract && yarn generate && yarn build"
+    "update": "yarn create:cache && yarn extract"
   },
   "keywords": [
     "justcode",

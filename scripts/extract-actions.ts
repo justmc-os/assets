@@ -298,19 +298,18 @@ const getArguments = (
       const ni = matches(contents, ACTION_NAME)[0];
       if (!ni) return error(`Could not find action in file: ${file}`);
       const [, name, id] = ni;
-      const patch = patches[id];
-      const patchHasIcon = patch && 'icon' in patch;
+      const { icon, ...patch } = patches[id] || {};
 
       if (!icons[name]) {
-        if (!patchHasIcon)
+        if (!icon)
           return error(
             `Could not find ${chalk.cyan('icon')} for action: ${id}`
           );
 
-        icons[name] = patch.icon;
+        icons[name] = icon;
         icons[name].type = 'action';
-      } else if (patchHasIcon) {
-        icons[name] = { ...icons[name], ...patch.icon };
+      } else if (icon) {
+        icons[name] = { ...icons[name], ...icon };
       }
 
       icons[name].id = id;

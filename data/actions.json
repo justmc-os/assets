@@ -16,12 +16,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "material": "LAPIS_ORE",
-      "type": "action",
-      "id": "call_function"
-    }
+    ]
   },
   {
     "id": "control_call_exception",
@@ -62,21 +57,16 @@
   },
   {
     "id": "controller_async_run",
-    "category": "control",
+    "category": "controller",
     "subcategory": null,
-    "type": "basic",
-    "args": [],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "controller_async_run"
-    }
+    "type": "container",
+    "args": []
   },
   {
     "id": "controller_exception",
-    "category": "control",
+    "category": "controller",
     "subcategory": null,
-    "type": "basic",
+    "type": "container",
     "args": [
       {
         "id": "variable",
@@ -93,9 +83,9 @@
   },
   {
     "id": "controller_measure_time",
-    "category": "control",
+    "category": "controller",
     "subcategory": null,
-    "type": "basic",
+    "type": "container",
     "args": [
       {
         "id": "variable",
@@ -182,24 +172,14 @@
     "category": "else",
     "subcategory": null,
     "type": "container",
-    "args": [],
-    "icon": {
-      "material": "END_STONE",
-      "type": "action",
-      "id": "else"
-    }
+    "args": []
   },
   {
     "id": "empty",
     "category": "empty",
     "subcategory": null,
     "type": "basic",
-    "args": [],
-    "icon": {
-      "material": "STRUCTURE_VOID",
-      "type": "action",
-      "id": "empty"
-    }
+    "args": []
   },
   {
     "id": "entity_attach_lead",
@@ -275,10 +255,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQzNTQyMzc0NCwKICAicHJvZmlsZUlkIiA6ICIyMWUzNjdkNzI1Y2Y0ZTNiYjI2OTJjNGEzMDBhNGRlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJHZXlzZXJNQyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kYTRkOTcxNTg1NmY1NTkzOWI5ODFmNzI2ZmIxZjZkNDYwMWE3YTNjYzE0NGJlZDZjMDg5OTFmODRlNWMzYzE2IgogICAgfQogIH0KfQ=="
-    }
+    ]
   },
   {
     "id": "entity_disguise_as_entity",
@@ -297,10 +274,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQzNTI2MjcwNSwKICAicHJvZmlsZUlkIiA6ICI3ZGEyYWIzYTkzY2E0OGVlODMwNDhhZmMzYjgwZTY4ZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2xkYXBmZWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWRiMGNjMDA0YzU1OTYwYmY4N2QxYjA0ZjBiZDVmNDk3MmM0NTczZjYwYjc2ZDkwOGJlZTg3MTIxZGFiMWYxYyIKICAgIH0KICB9Cn0="
-    }
+    ]
   },
   {
     "id": "entity_disguise_as_item",
@@ -319,10 +293,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ=="
-    }
+    ]
   },
   {
     "id": "entity_disguise_as_player",
@@ -364,10 +335,7 @@
           "SERVER"
         ]
       }
-    ],
-    "icon": {
-      "texture": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQzNTM2NzIxOSwKICAicHJvZmlsZUlkIiA6ICIyYzEwNjRmY2Q5MTc0MjgyODRlM2JmN2ZhYTdlM2UxYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJOYWVtZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lM2FlODE1ZmRlNTg0N2M2YjAzNzc5NmQ3ZTcwYmQwMTNlZTZkNzk3YzMyNWExMjFjNWRlNmZlODM1ZTdhM2Y2IgogICAgfQogIH0KfQ=="
-    }
+    ]
   },
   {
     "id": "entity_eat_grass",
@@ -393,10 +361,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNjZTZmOTk5OGVkMmRhNzU3ZDFlNjM3MmYwNGVmYTIwZTU3ZGZjMTdjM2EwNjQ3ODY1N2JiZGY1MWMyZjJhMiJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_explode",
@@ -554,10 +519,7 @@
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": [],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI5YmFiOTZmOWVlY2I4OWU4Y2M2ZTJiNGZhZThiYWY3ZDM4ZWZlOWYwOWIyZjQyY2Q5MmI4NDhmNWJjMzMifX19"
-    }
+    "args": []
   },
   {
     "id": "entity_jump",
@@ -837,10 +799,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjAzMzMwMzk4YTBkODMzZjUzYWU4YzlhMWNiMzkzYzc0ZTlkMzFlMTg4ODU4NzBlODZhMjEzM2Q0NGYwYzYzYyJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_remove",
@@ -873,10 +832,7 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
-    "icon": {
-      "texture": "eyJ0aW1lc3RhbXAiOjE1NDQ3ODAzMzAyNzQsInByb2ZpbGVJZCI6ImE5MGI4MmIwNzE4NTQ0ZjU5YmE1MTZkMGY2Nzk2NDkwIiwicHJvZmlsZU5hbWUiOiJJbUZhdFRCSCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdiYTM2ZmZiMTNjMWUxNTc2ZmViMjc3ZTM1OGNmMWZmZjM1ZGNhY2M2OTNlY2M1MDc1OTUwN2UwM2I1ODIifX19"
-    }
+    "args": []
   },
   {
     "id": "entity_remove_potion_effect",
@@ -999,10 +955,7 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_angry",
@@ -1033,10 +986,7 @@
           23
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQwMDIyM2YxZmE1NDc0MWQ0MjFkN2U4MDQ2NDA5ZDVmM2UxNWM3ZjQzNjRiMWI3Mzk5NDAyMDhmM2I2ODZkNCJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_animal_age",
@@ -1348,10 +1298,7 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19"
-    }
+    ]
   },
   {
     "id": "entity_set_cat_lying_down",
@@ -1438,10 +1385,7 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "texture": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDA2MTUxMTIzMSwKICAicHJvZmlsZUlkIiA6ICJlNzkzYjJjYTdhMmY0MTI2YTA5ODA5MmQ3Yzk5NDE3YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGVfSG9zdGVyX01hbiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jZjE4MTA4ZmVhNTg5ZTNkMDg2NjcwYmFjM2Y2Y2VkMDI0NjgzNDlkMTliYTM5YzFhNTkxMWJjZTEzMDc5MTI5IgogICAgfQogIH0KfQ=="
-    }
+    ]
   },
   {
     "id": "entity_set_creeper_fuse",
@@ -1651,10 +1595,7 @@
           "YELLOW"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDllYzIyODE4ZDFmYmZjODE2N2ZiZTM2NzI4YjI4MjQwZTM0ZTE2NDY5YTI5MjlkMDNmZGY1MTFiZjJjYTEifX19"
-    }
+    ]
   },
   {
     "id": "entity_set_end_crystal_beam",
@@ -1673,10 +1614,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjc0ODEzOWVlNmNmZjc0NGM3ZTg5NTkzZjZiOTBkNDYwNDRkMDdlZTVlNjM4MjhmYmU5NTMxZmI2NmRmOWI4ZiJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_enderman_block",
@@ -1850,10 +1788,7 @@
           "SNOW"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5NTRhNDJlNjllMDg4MWFlNmQyNGQ0MjgxNDU5YzE0NGEwZDVhOTY4YWVkMzVkNmQzZDczYTNjNjVkMjZhIn19fQ=="
-    }
+    ]
   },
   {
     "id": "entity_set_freeze_ticks",
@@ -1972,10 +1907,7 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjAzMzMwMzk4YTBkODMzZjUzYWU4YzlhMWNiMzkzYzc0ZTlkMzFlMTg4ODU4NzBlODZhMjEzM2Q0NGYwYzYzYyJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_gravity",
@@ -2273,10 +2205,7 @@
           "BOTH"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNhMDk2ZWVhNTA2MzAxYmVhNmQ0YjE3ZWUxNjA1NjI1YTZmNTA4MmM3MWY3NGE2MzljYzk0MDQzOWY0NzE2NiJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_parrot_type",
@@ -2543,10 +2472,7 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19"
-    }
+    ]
   },
   {
     "id": "entity_set_shulker_bullet_target",
@@ -2565,10 +2491,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVkZjkyYWJmMTI4Nzc3YzMyZGU3MjQ3ODRhZmYxYmYyMzVmZjY2Yzc2NTk0OWZkNzVkNGFiNWQ2NjRiOSJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_silenced",
@@ -2628,10 +2551,7 @@
         ],
         "size": "int"
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODk1YWVlYzZiODQyYWRhODY2OWY4NDZkNjViYzQ5NzYyNTk3ODI0YWI5NDRmMjJmNDViZjNiYmI5NDFhYmU2YyJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_snowman_pumpkin",
@@ -2839,10 +2759,7 @@
     "category": "entity",
     "subcategory": "settings",
     "type": "basic",
-    "args": [],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTE5NTUxNjhlZjUzZjcxMjBjMDg5ZGFmZTNlNmU0MzdlOTUyNDA1NTVkOGMzYWNjZjk0NGQ2YzU2Yjc0MDQ3NSJ9fX0="
-    }
+    "args": []
   },
   {
     "id": "entity_set_visual_fire",
@@ -2893,10 +2810,7 @@
         ],
         "size": "int"
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNmMzY3NGIyZGRjMGVmN2MzOWUzYjljNmI1ODY3N2RlNWNmMzc3ZDJlYjA3M2YyZjNmZTUwOTE5YjFjYTRjOSJ9fX0="
-    }
+    ]
   },
   {
     "id": "entity_set_warden_digging",
@@ -2916,12 +2830,7 @@
           "DIG_DOWN"
         ]
       }
-    ],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "entity_set_warden_digging"
-    }
+    ]
   },
   {
     "id": "entity_set_wearing_saddle",
@@ -3008,10 +2917,27 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5NTRhNDJlNjllMDg4MWFlNmQyNGQ0MjgxNDU5YzE0NGEwZDVhOTY4YWVkMzVkNmQzZDczYTNjNjVkMjZhIn19fQ=="
-    }
+    ]
+  },
+  {
+    "id": "entity_swing_hand",
+    "category": "entity",
+    "subcategory": "appearance",
+    "type": "basic",
+    "args": [
+      {
+        "id": "hand_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "MAIN",
+          "OFF"
+        ]
+      }
+    ]
   },
   {
     "id": "entity_teleport",
@@ -4143,10 +4069,7 @@
           "APPLICATION_JSON"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkZDRmZTRhNDI5YWJkNjY1ZGZkYjNlMjEzMjFkNmVmYTZhNmI1ZTdiOTU2ZGI5YzVkNTljOWVmYWIyNSJ9fX0="
-    }
+    ]
   },
   {
     "id": "game_set_age",
@@ -4298,12 +4221,7 @@
           24
         ]
       }
-    ],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "game_set_block_custom_tag"
-    }
+    ]
   },
   {
     "id": "game_set_block_data",
@@ -4803,10 +4721,7 @@
           23
         ]
       }
-    ],
-    "icon": {
-      "texture": "none"
-    }
+    ]
   },
   {
     "id": "game_set_block_powered",
@@ -6003,6 +5918,25 @@
     "args": []
   },
   {
+    "id": "game_update_block",
+    "category": "game",
+    "subcategory": null,
+    "type": "basic",
+    "args": [
+      {
+        "id": "location",
+        "plural": false,
+        "type": "location",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ]
+      }
+    ]
+  },
+  {
     "id": "if_entity_exists",
     "category": "if_entity",
     "subcategory": null,
@@ -6099,10 +6033,7 @@
     "category": "if_entity",
     "subcategory": null,
     "type": "container",
-    "args": [],
-    "icon": {
-      "texture": "none"
-    }
+    "args": []
   },
   {
     "id": "if_entity_is_grounded",
@@ -6946,10 +6877,7 @@
           26
         ]
       }
-    ],
-    "icon": {
-      "texture": "none"
-    }
+    ]
   },
   {
     "id": "if_game_heal_cause_equals",
@@ -7697,10 +7625,7 @@
     "category": "if_player",
     "subcategory": "toggleable",
     "type": "container",
-    "args": [],
-    "icon": {
-      "texture": "none"
-    }
+    "args": []
   },
   {
     "id": "if_player_is_flying",
@@ -8062,10 +7987,7 @@
     "category": "if_player",
     "subcategory": "toggleable",
     "type": "container",
-    "args": [],
-    "icon": {
-      "texture": "none"
-    }
+    "args": []
   },
   {
     "id": "if_player_is_sleeping",
@@ -9311,12 +9233,7 @@
           25
         ]
       }
-    ],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "player_allow_placing_breaking_blocks"
-    }
+    ]
   },
   {
     "id": "player_boost_elytra",
@@ -9487,10 +9404,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQzNDE3NjcwNCwKICAicHJvZmlsZUlkIiA6ICI3NTE0NDQ4MTkxZTY0NTQ2OGM5NzM5YTZlMzk1N2JlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGFua3NNb2phbmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFkMWVlMWVjN2RiOTQ3ZGUyMDllMjZlNTg1NzQ3OTRlM2Q2OTYyZDVjY2UwNDIyYWY1NTc3YTg3YmI0NmZlZSIKICAgIH0KICB9Cn0="
-    }
+    ]
   },
   {
     "id": "player_disguise_as_entity",
@@ -9509,10 +9423,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlMjUyNmZiNGJkM2I3MDgxZWVkYmRlOTU4MGY0ZDZjNDdkNDBiZWRiNjM2ZjEwMjc4YWNlOWRmM2E1MmY1In19fQ=="
-    }
+    ]
   },
   {
     "id": "player_disguise_as_item",
@@ -9531,10 +9442,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19"
-    }
+    ]
   },
   {
     "id": "player_display_block",
@@ -10160,12 +10068,7 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "player_force_flight_mode"
-    }
+    ]
   },
   {
     "id": "player_give_experience",
@@ -10434,10 +10337,7 @@
           "FALSE"
         ]
       }
-    ],
-    "icon": {
-      "texture": "none"
-    }
+    ]
   },
   {
     "id": "player_hide_scoreboard",
@@ -10971,10 +10871,7 @@
     "category": "player",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
-    "icon": {
-      "texture": "none"
-    }
+    "args": []
   },
   {
     "id": "player_remove_inventory_menu_row",
@@ -11108,10 +11005,7 @@
     "category": "player",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
-    "icon": {
-      "texture": "none"
-    }
+    "args": []
   },
   {
     "id": "player_remove_skin",
@@ -11245,10 +11139,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "ewogICJ0aW1lc3RhbXAiIDogMTU5MDQzNDE3NjcwNCwKICAicHJvZmlsZUlkIiA6ICI3NTE0NDQ4MTkxZTY0NTQ2OGM5NzM5YTZlMzk1N2JlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJUaGFua3NNb2phbmciLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFkMWVlMWVjN2RiOTQ3ZGUyMDllMjZlNTg1NzQ3OTRlM2Q2OTYyZDVjY2UwNDIyYWY1NTc3YTg3YmI0NmZlZSIKICAgIH0KICB9Cn0="
-    }
+    ]
   },
   {
     "id": "player_self_disguise_as_entity",
@@ -11267,10 +11158,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhlMjUyNmZiNGJkM2I3MDgxZWVkYmRlOTU4MGY0ZDZjNDdkNDBiZWRiNjM2ZjEwMjc4YWNlOWRmM2E1MmY1In19fQ=="
-    }
+    ]
   },
   {
     "id": "player_self_disguise_as_item",
@@ -11289,12 +11177,7 @@
           22
         ]
       }
-    ],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "player_self_disguise_as_item"
-    }
+    ]
   },
   {
     "id": "player_send_action_bar",
@@ -11843,10 +11726,7 @@
         ],
         "size": "int"
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDQyMGM5YzQzZTA5NTg4MGRjZDJlMjgxYzgxZjQ3YjE2M2I0NzhmNThhNTg0YmI2MWY5M2U2ZTEwYTE1NWYzMSJ9fX0="
-    }
+    ]
   },
   {
     "id": "player_set_boss_bar",
@@ -12691,12 +12571,7 @@
           "SEPARATE_LINES"
         ]
       }
-    ],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "player_set_player_list_info"
-    }
+    ]
   },
   {
     "id": "player_set_pose",
@@ -12862,10 +12737,7 @@
           "SERVER"
         ]
       }
-    ],
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTNjYTA3OTk2OTVmM2MzY2U0ZjQxMWVmMWU2OGU5MjdkZWQ3ZTQ5ZjYwOGY0ZDYxZDViYzlkZmI5NTUwMDkzMSJ9fX0="
-    }
+    ]
   },
   {
     "id": "player_set_slot_item",
@@ -15570,9 +15442,6 @@
           "S_S"
         ]
       }
-    },
-    "icon": {
-      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMyYzYxNzE1MzJhMmE4N2YwZWViMjhlZGQwMTA4MzNmMzNmMGFlNjg0MWE1MjRlMWI1MjAwYTM1ZDM4NTA1MCJ9fX0="
     }
   },
   {
@@ -15860,12 +15729,7 @@
           26
         ]
       }
-    ],
-    "icon": {
-      "material": "GRAY_WOOL",
-      "type": "action",
-      "id": "set_variable_get_block_custom_tag"
-    }
+    ]
   },
   {
     "id": "set_variable_get_block_data",
@@ -17546,10 +17410,7 @@
           23
         ]
       }
-    ],
-    "icon": {
-      "texture": "none"
-    }
+    ]
   },
   {
     "id": "set_variable_get_player_head_owner",
@@ -23237,11 +23098,6 @@
           "SHARE"
         ]
       }
-    ],
-    "icon": {
-      "material": "EMERALD_ORE",
-      "type": "action",
-      "id": "start_process"
-    }
+    ]
   }
 ]

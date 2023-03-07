@@ -547,5 +547,10 @@
     "icon": {
       "texture": "none"
     }
+  },
+  "game_update_block": {
+    "icon": {
+      "material": "LEVER"
+    }
   }
 }

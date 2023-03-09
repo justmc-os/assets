@@ -18,11 +18,19 @@ export * from './ActionsData';
 export * from './EventsData';
 export * from './GameValuesData';
 
-export default {
-  actions: require('./data/actions.json') as ActionsData,
-  events: require('./data/events.json') as EventsData,
-  gameValues: require('./data/game_values.json') as GameValuesData,
+export type Data = {
+  actions: ActionsData,
+  events: EventsData,
+  gameValues: GameValuesData,
 }
+
+const data: Data = {
+  actions: require('./data/actions.json'),
+  events: require('./data/events.json'),
+  gameValues: require('./data/game_values.json'),
+}
+
+export default data;
 `.trim();
 
 (async () => {

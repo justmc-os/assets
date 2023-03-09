@@ -40,6 +40,6 @@ export const actionCategoryFromId = (
   return CATEGORIES.find((category) => id.startsWith(category));
 };
 
-type ActionsData = Record<ActionCategory, Action[]>;
+type ActionsData = Action[];
 
 export default ActionsData;

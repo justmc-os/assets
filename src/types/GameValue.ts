@@ -1,23 +1,22 @@
 import { ValueType, ValueTypes } from './ValueType';
+import WithMetadata from './WithMetadata';
+import WithId from './WithId';
 
-type BaseGameValue = {
-  id: string;
-  worksWith?: string[];
-};
+type BaseGameValue = WithMetadata & WithId;
 
 ///////////////////////////////////////////////////////////////////////////////
 
-type BasicGameValue = BaseGameValue & {
+export type BasicGameValue = BaseGameValue & {
   type: ValueTypes[keyof Omit<ValueTypes, 'LIST' | 'DICTIONARY'>];
 };
 
-type ListGameValue = BaseGameValue & {
+export type ListGameValue = BaseGameValue & {
   type: ValueTypes['LIST'];
 
   elementType: ValueTypes;
 };
 
-type DictionaryGameValue = BaseGameValue & {
+export type DictionaryGameValue = BaseGameValue & {
   type: ValueTypes['DICTIONARY'];
 
   /**

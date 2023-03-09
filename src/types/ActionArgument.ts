@@ -1,4 +1,5 @@
 import { ValueType, valueTypeFromInternal, ValueTypes } from './ValueType';
+import WithId from './WithId';
 
 // Enums are awful in typescript, sadly
 export const ActionArgumentTypes = {
@@ -100,9 +101,7 @@ export type PotionArgumentDefaultValue = {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-export type BaseActionArgument = {
-  id: string;
-
+export type BaseActionArgument = WithId & {
   /**
    * Plural argument is an argument that has multiple slots in the action menu
    * along with description slots that hint to the type of the argument
@@ -120,7 +119,7 @@ export type BaseActionArgument = {
   descriptionSlots: number[];
 };
 
-export type WithDefaultValue<T> = {
+type WithDefaultValue<T> = {
   defaultValue?: T;
 };
 

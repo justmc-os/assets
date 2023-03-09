@@ -46,6 +46,9 @@
           23
         ]
       }
+    ],
+    "additionalInfo": [
+      "info"
     ]
   },
   {
@@ -53,7 +56,10 @@
     "category": "control",
     "subcategory": null,
     "type": "basic",
-    "args": []
+    "args": [],
+    "additionalInfo": [
+      "stops_parent_events"
+    ]
   },
   {
     "id": "controller_async_run",
@@ -79,6 +85,9 @@
           22
         ]
       }
+    ],
+    "additionalInfo": [
+      "exception"
     ]
   },
   {
@@ -111,6 +120,9 @@
           "MILLISECONDS"
         ]
       }
+    ],
+    "additionalInfo": [
+      "time"
     ]
   },
   {
@@ -118,7 +130,10 @@
     "category": "control",
     "subcategory": null,
     "type": "basic",
-    "args": []
+    "args": [],
+    "additionalInfo": [
+      "returns_to_parent_function"
+    ]
   },
   {
     "id": "control_skip_iteration",
@@ -165,6 +180,9 @@
           "MINUTES"
         ]
       }
+    ],
+    "additionalInfo": [
+      "not_less_than_one_tick"
     ]
   },
   {
@@ -342,7 +360,10 @@
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "sheep"
+    ]
   },
   {
     "id": "entity_eat_target",
@@ -361,6 +382,9 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "frog"
     ]
   },
   {
@@ -368,7 +392,12 @@
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "creeper",
+      "tnt",
+      "firework"
+    ]
   },
   {
     "id": "entity_face_location",
@@ -519,14 +548,20 @@
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "creeper"
+    ]
   },
   {
     "id": "entity_jump",
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "mob"
+    ]
   },
   {
     "id": "entity_launch_forward",
@@ -752,6 +787,9 @@
         ],
         "size": "float"
       }
+    ],
+    "worksWith": [
+      "mob"
     ]
   },
   {
@@ -759,7 +797,10 @@
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "mob"
+    ]
   },
   {
     "id": "entity_play_damage_animation",
@@ -799,6 +840,9 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "goat"
     ]
   },
   {
@@ -955,6 +999,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "allay"
     ]
   },
   {
@@ -986,6 +1033,16 @@
           23
         ]
       }
+    ],
+    "worksWith": [
+      "bee",
+      "wolf",
+      "zombie_pigman",
+      "enderman",
+      "mobs"
+    ],
+    "additionalInfo": [
+      "mobs_require_target"
     ]
   },
   {
@@ -1109,6 +1166,9 @@
           "DONT_CHANGE"
         ]
       }
+    ],
+    "worksWith": [
+      "armor_stand"
     ]
   },
   {
@@ -1169,6 +1229,9 @@
           "RIGHT_LEG"
         ]
       }
+    ],
+    "worksWith": [
+      "armor_stand"
     ]
   },
   {
@@ -1231,6 +1294,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "mob"
     ]
   },
   {
@@ -1238,7 +1304,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "axolotl"
+    ]
   },
   {
     "id": "entity_set_baby",
@@ -1278,6 +1347,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "bee"
     ]
   },
   {
@@ -1298,6 +1370,11 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "donkey",
+      "mule",
+      "llama"
     ]
   },
   {
@@ -1318,6 +1395,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "cat"
     ]
   },
   {
@@ -1325,7 +1405,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "cat"
+    ]
   },
   {
     "id": "entity_set_celebrating",
@@ -1345,6 +1428,10 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "piglin",
+      "raider"
     ]
   },
   {
@@ -1385,6 +1472,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "creeper"
     ]
   },
   {
@@ -1405,6 +1495,9 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "creeper"
     ]
   },
   {
@@ -1561,7 +1654,10 @@
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "ender_dragon"
+    ]
   },
   {
     "id": "entity_set_dye_color",
@@ -1595,6 +1691,12 @@
           "YELLOW"
         ]
       }
+    ],
+    "worksWith": [
+      "sheep",
+      "shulker",
+      "dog",
+      "cat"
     ]
   },
   {
@@ -1614,6 +1716,9 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "end_crystal"
     ]
   },
   {
@@ -1633,6 +1738,9 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "enderman"
     ]
   },
   {
@@ -1688,6 +1796,11 @@
         ],
         "size": "float"
       }
+    ],
+    "worksWith": [
+      "creeper",
+      "tnt",
+      "fireball"
     ]
   },
   {
@@ -1748,6 +1861,9 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "fish_hook"
     ]
   },
   {
@@ -1768,6 +1884,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "fox"
     ]
   },
   {
@@ -1788,6 +1907,9 @@
           "SNOW"
         ]
       }
+    ],
+    "worksWith": [
+      "fox"
     ]
   },
   {
@@ -1827,7 +1949,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "frog"
+    ]
   },
   {
     "id": "entity_set_gliding",
@@ -1887,6 +2012,9 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "glow_squid"
     ]
   },
   {
@@ -1907,6 +2035,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "goat"
     ]
   },
   {
@@ -1947,6 +2078,12 @@
         ],
         "size": "float"
       }
+    ],
+    "worksWith": [
+      "horse",
+      "donkey",
+      "mule",
+      "llama"
     ]
   },
   {
@@ -1989,6 +2126,9 @@
           "DO_NOT_CHANGE"
         ]
       }
+    ],
+    "worksWith": [
+      "horse"
     ]
   },
   {
@@ -2068,6 +2208,9 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "item"
     ]
   },
   {
@@ -2087,6 +2230,9 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "item_frame"
     ]
   },
   {
@@ -2094,7 +2240,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "llama"
+    ]
   },
   {
     "id": "entity_set_marker",
@@ -2114,6 +2263,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "armor_stand"
     ]
   },
   {
@@ -2177,6 +2329,9 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "minecart"
     ]
   },
   {
@@ -2184,7 +2339,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "mushroom_cow"
+    ]
   },
   {
     "id": "entity_set_panda_gene",
@@ -2205,6 +2363,9 @@
           "BOTH"
         ]
       }
+    ],
+    "worksWith": [
+      "panda"
     ]
   },
   {
@@ -2212,7 +2373,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "parrot"
+    ]
   },
   {
     "id": "entity_set_persistence",
@@ -2232,6 +2396,10 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "item",
+      "falling_block"
     ]
   },
   {
@@ -2252,6 +2420,9 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "item"
     ]
   },
   {
@@ -2316,6 +2487,9 @@
         ],
         "size": "float"
       }
+    ],
+    "worksWith": [
+      "area_cloud_effect"
     ]
   },
   {
@@ -2361,7 +2535,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "rabbit"
+    ]
   },
   {
     "id": "entity_set_rearing",
@@ -2381,6 +2558,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "horse"
     ]
   },
   {
@@ -2472,6 +2652,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "sheep"
     ]
   },
   {
@@ -2491,6 +2674,9 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "shulker_bullet"
     ]
   },
   {
@@ -2531,6 +2717,13 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "wolf",
+      "cat",
+      "parrot",
+      "fox",
+      "panda"
     ]
   },
   {
@@ -2551,6 +2744,10 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "slime",
+      "phantom"
     ]
   },
   {
@@ -2571,6 +2768,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "snowman"
     ]
   },
   {
@@ -2590,6 +2790,14 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "wolf",
+      "cat",
+      "horse",
+      "mule",
+      "llama",
+      "parrot"
     ]
   },
   {
@@ -2609,6 +2817,12 @@
           22
         ]
       }
+    ],
+    "worksWith": [
+      "mob"
+    ],
+    "additionalInfo": [
+      "stop_target"
     ]
   },
   {
@@ -2694,6 +2908,9 @@
           "DO_NOT_CHANGE"
         ]
       }
+    ],
+    "worksWith": [
+      "tropical_fish"
     ]
   },
   {
@@ -2732,7 +2949,10 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "villager"
+    ]
   },
   {
     "id": "entity_set_villager_experience",
@@ -2752,6 +2972,9 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "villager"
     ]
   },
   {
@@ -2759,7 +2982,11 @@
     "category": "entity",
     "subcategory": "settings",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "villager",
+      "zombie_villager"
+    ]
   },
   {
     "id": "entity_set_visual_fire",
@@ -2810,6 +3037,12 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "warden"
+    ],
+    "additionalInfo": [
+      "warden_anger_level_80"
     ]
   },
   {
@@ -2850,6 +3083,11 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "pig",
+      "horse",
+      "strider"
     ]
   },
   {
@@ -2870,6 +3108,9 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "wither"
     ]
   },
   {
@@ -2890,6 +3131,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "zombie"
     ]
   },
   {
@@ -2897,7 +3141,10 @@
     "category": "entity",
     "subcategory": "miscellaneous",
     "type": "basic",
-    "args": []
+    "args": [],
+    "worksWith": [
+      "sheep"
+    ]
   },
   {
     "id": "entity_sleep",
@@ -2917,6 +3164,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "fox"
     ]
   },
   {
@@ -3000,6 +3250,9 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "mob"
     ]
   },
   {
@@ -3267,6 +3520,10 @@
           35
         ]
       }
+    ],
+    "worksWith": [
+      "entity_explode_event",
+      "block_explode_event"
     ]
   },
   {
@@ -3571,6 +3828,11 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "player_join_event",
+      "player_quit_event",
+      "player_death_event"
     ]
   },
   {
@@ -4487,6 +4749,9 @@
         ],
         "size": "double"
       }
+    ],
+    "worksWith": [
+      "damage_events"
     ]
   },
   {
@@ -4507,6 +4772,11 @@
         ],
         "size": "int"
       }
+    ],
+    "worksWith": [
+      "player_fish_event",
+      "player_pickup_exp_orb_event",
+      "kill_events"
     ]
   },
   {
@@ -4527,6 +4797,10 @@
         ],
         "size": "double"
       }
+    ],
+    "worksWith": [
+      "player_heal_event",
+      "entity_heal_event"
     ]
   },
   {
@@ -5039,6 +5313,9 @@
         ],
         "size": "int"
       }
+    ],
+    "additionalInfo": [
+      "default_forever"
     ]
   },
   {
@@ -7405,6 +7682,9 @@
         ],
         "defaultValue": "false"
       }
+    ],
+    "additionalInfo": [
+      "exact_or_cascade"
     ]
   },
   {
@@ -8438,6 +8718,10 @@
           24
         ]
       }
+    ],
+    "worksWith": [
+      "numbers",
+      "locations"
     ]
   },
   {
@@ -9535,6 +9819,13 @@
           "FALSE"
         ]
       }
+    ],
+    "worksWith": [
+      "chests",
+      "trapped_chests",
+      "ender_chests",
+      "shulker_boxes",
+      "barrels"
     ]
   },
   {
@@ -9596,6 +9887,9 @@
           23
         ]
       }
+    ],
+    "additionalInfo": [
+      "multiple_lines_on_newline"
     ]
   },
   {
@@ -9861,6 +10155,9 @@
         ],
         "size": "int"
       }
+    ],
+    "additionalInfo": [
+      "who_can_be_collected"
     ]
   },
   {
@@ -13031,6 +13328,9 @@
         ],
         "size": "float"
       }
+    ],
+    "additionalInfo": [
+      "empty_name_hide_display_name"
     ]
   },
   {
@@ -13295,6 +13595,9 @@
           "FALSE"
         ]
       }
+    ],
+    "additionalInfo": [
+      "closes_inventory"
     ]
   },
   {
@@ -14971,6 +15274,10 @@
         ],
         "size": "int"
       }
+    ],
+    "additionalInfo": [
+      "works_with_integers",
+      "radix_is_limited"
     ]
   },
   {
@@ -15181,6 +15488,9 @@
           35
         ]
       }
+    ],
+    "additionalInfo": [
+      "clears_list_if_exists"
     ]
   },
   {
@@ -15195,7 +15505,10 @@
       "values": {
         "elementType": "any"
       }
-    }
+    },
+    "additionalInfo": [
+      "clears_map_if_exists"
+    ]
   },
   {
     "id": "set_variable_vector_cross_product",
@@ -17779,6 +18092,9 @@
           23
         ]
       }
+    ],
+    "additionalInfo": [
+      "resource_packs_with_their_own_fonts"
     ]
   },
   {
@@ -20588,6 +20904,9 @@
           27
         ]
       }
+    ],
+    "additionalInfo": [
+      "clears_lore_if_empty"
     ]
   },
   {
@@ -22175,7 +22494,12 @@
       "list": {
         "elementType": "any"
       }
-    }
+    },
+    "worksWith": [
+      "numbers",
+      "texts",
+      "arrays"
+    ]
   },
   {
     "id": "set_variable_sort_any_map",

@@ -23,7 +23,7 @@
     "id": "player_interact",
     "category": "player",
     "cancellable": true,
-    "worksWith": [
+    "additionalInfo": [
       "right_click_and_left_click"
     ]
   },
@@ -313,7 +313,7 @@
     "id": "player_respawn",
     "category": "player",
     "cancellable": false,
-    "worksWith": [
+    "additionalInfo": [
       "wait_before_interacting"
     ]
   },

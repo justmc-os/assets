@@ -1,9 +1,10 @@
 import ActionArgument from './ActionArgument';
+import WithMetadata from './WithMetadata';
 import {
   ActionCategories,
   ActionCategory,
   actionCategoryFromId,
-} from './ActionsData';
+} from '../ActionsData';
 
 export const ActionTypes = {
   /**
@@ -63,7 +64,7 @@ export const naiveActionTypeFromId = (
 
 ///////////////////////////////////////////////////////////////////////////////
 
-type BaseAction = {
+type BaseAction = WithMetadata & {
   id: string;
 };
 

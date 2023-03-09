@@ -1,27 +1,27 @@
 {
-  "name": "justcode",
+  "name": "@justmc/justcode",
   "version": "1.0.0",
-  "description": "",
+  "description": "Data for JustCode",
+  "author": "rqbik",
+  "license": "MIT",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf .cache",
     "create:cache": "yarn clean && ts-node scripts/create-cache",
     "create:icons": "ts-node scripts/create-icons",
+    "create:index": "ts-node scripts/create-index",
     "extract:events": "ts-node scripts/extract-events",
     "extract:game-values": "ts-node scripts/extract-game-values",
     "extract:actions": "ts-node scripts/extract-actions",
     "extract": "yarn extract:events && yarn extract:game-values && yarn extract:actions",
-    "update": "yarn create:cache && yarn extract"
+    "update": "yarn create:cache && yarn extract",
+    "generate": "yarn update && yarn create:icons && yarn create:index && tsc && bash scripts/move-data-to-dist.sh"
   },
-  "keywords": [
-    "justcode",
-    "justmc",
-    "minecraft",
-    "typescript"
+  "files": [
+    "dist"
   ],
-  "author": "rqbik",
-  "license": "MIT",
   "devDependencies": {
     "@gitbeaker/node": "^35.8.0",
     "@types/node": "^18.14.1",
@@ -32,5 +32,14 @@
     "node-fetch": "2",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "keywords": [
+    "justcode",
+    "justmc",
+    "minecraft",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }

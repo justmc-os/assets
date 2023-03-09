@@ -19,8 +19,8 @@ import {
   GAME_VALUE_ICONS_CACHE_FILE,
 } from './common';
 
-import { ValueTypes, valueTypeFromInternal } from '../src/ValueType';
-import GameValue from '../src/GameValue';
+import { ValueTypes, valueTypeFromInternal } from '../src/types/ValueType';
+import GameValue from '../src/types/GameValue';
 
 ///////////////////////////////////////////////////////////////////////////////
 

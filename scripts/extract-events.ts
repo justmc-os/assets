@@ -140,7 +140,7 @@ const REGISTERED_EVENT_REGEX = /val\s*(.*?)\s*=\s*register.*\("(.*)"\)/g;
         cancellable: icon.cancellable,
         ...(icon.worksWith?.length ? { worksWith: icon.worksWith } : {}),
         ...(icon.additionalInfo?.length
-          ? { worksWith: icon.additionalInfo }
+          ? { additionalInfo: icon.additionalInfo }
           : {}),
       };
     });

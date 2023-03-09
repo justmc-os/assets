@@ -17,15 +17,14 @@ import {
   CachedIcon,
   ACTION_MENUS_CACHE_DIR,
   ACTION_ICONS_CACHE_FILE,
-  warn,
 } from './common';
 
-import { naiveActionTypeFromId } from '../src/Action';
+import { naiveActionTypeFromId } from '../src/types/Action';
 import ActionArgument, {
   ActionArgumentTypes,
   argumentTypeFromInternal,
   NumberActionArgumentSize,
-} from '../src/ActionArgument';
+} from '../src/types/ActionArgument';
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -298,21 +297,22 @@ const getArguments = (
       const ni = matches(contents, ACTION_NAME)[0];
       if (!ni) return error(`Could not find action in file: ${file}`);
       const [, name, id] = ni;
-      const { icon, ...patch } = patches[id] || {};
+      const { icon: patchIcon, ...patch } = patches[id] || {};
 
       if (!icons[name]) {
-        if (!icon)
+        if (!patchIcon)
           return error(
             `Could not find ${chalk.cyan('icon')} for action: ${id}`
           );
 
-        icons[name] = icon;
+        icons[name] = patchIcon;
         icons[name].type = 'action';
-      } else if (icon) {
-        icons[name] = { ...icons[name], ...icon };
+      } else if (patchIcon) {
+        icons[name] = { ...icons[name], ...patchIcon };
       }
 
       icons[name].id = id;
+      const icon = icons[name];
 
       const ct = naiveActionTypeFromId(id);
       if (!ct) return error(`Could not find category for action: ${id}`);
@@ -321,9 +321,13 @@ const getArguments = (
       return {
         id,
         category,
-        subcategory: icons[name]?.subcategory || null,
+        subcategory: icon?.subcategory || null,
         type,
         args: getArguments(id, enums, patch?.['args'] || {}, contents),
+        ...(icon?.worksWith?.length ? { worksWith: icon.worksWith } : {}),
+        ...(icon?.additionalInfo?.length
+          ? { additionalInfo: icon.additionalInfo }
+          : {}),
         ...patch,
       };
     })

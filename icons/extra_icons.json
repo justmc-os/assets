@@ -1,0 +1,152 @@
+[
+  {
+    "id": "player",
+    "path": "actions/categories",
+    "material": "COBBLESTONE"
+  },
+  {
+    "id": "if_player",
+    "path": "actions/categories",
+    "material": "OAK_PLANKS"
+  },
+  {
+    "id": "entity",
+    "path": "actions/categories",
+    "material": "MOSSY_COBBLESTONE"
+  },
+  {
+    "id": "if_entity",
+    "path": "actions/categories",
+    "material": "BRICKS"
+  },
+  {
+    "id": "game",
+    "path": "actions/categories",
+    "material": "NETHERRACK"
+  },
+  {
+    "id": "if_game",
+    "path": "actions/categories",
+    "material": "RED_NETHER_BRICKS"
+  },
+  {
+    "id": "control",
+    "path": "actions/categories",
+    "material": "COAL_BLOCK"
+  },
+  {
+    "id": "controller",
+    "path": "actions/categories",
+    "material": "DARK_PRISMARINE"
+  },
+  {
+    "id": "set_variable",
+    "path": "actions/categories",
+    "material": "IRON_BLOCK"
+  },
+  {
+    "id": "if_variable",
+    "path": "actions/categories",
+    "material": "OBSIDIAN"
+  },
+  {
+    "id": "select",
+    "path": "actions/categories",
+    "material": "PURPUR_BLOCK"
+  },
+  {
+    "id": "repeat",
+    "path": "actions/categories",
+    "material": "PRISMARINE"
+  },
+  {
+    "id": "else",
+    "path": "actions/categories",
+    "material": "END_STONE"
+  },
+  {
+    "id": "call_function",
+    "path": "actions/categories",
+    "material": "LAPIS_ORE"
+  },
+  {
+    "id": "start_process",
+    "path": "actions/categories",
+    "material": "EMERALD_ORE"
+  },
+  {
+    "id": "number",
+    "path": "arguments",
+    "material": "SLIME_BALL"
+  },
+  {
+    "id": "text",
+    "path": "arguments",
+    "material": "BOOK"
+  },
+  {
+    "id": "item",
+    "path": "arguments",
+    "material": "ITEM_FRAME"
+  },
+  {
+    "id": "block",
+    "path": "arguments",
+    "material": "CHISELED_STONE_BRICKS"
+  },
+  {
+    "id": "location",
+    "path": "arguments",
+    "material": "PAPER"
+  },
+  {
+    "id": "vector",
+    "path": "arguments",
+    "material": "PRISMARINE_SHARD"
+  },
+  {
+    "id": "sound",
+    "path": "arguments",
+    "material": "NAUTILUS_SHELL"
+  },
+  {
+    "id": "particle",
+    "path": "arguments",
+    "material": "PHANTOM_MEMBRANE"
+  },
+  {
+    "id": "potion",
+    "path": "arguments",
+    "material": "POTION"
+  },
+  {
+    "id": "list",
+    "path": "arguments",
+    "material": "ENDER_CHEST"
+  },
+  {
+    "id": "dictionary",
+    "path": "arguments",
+    "material": "CHEST_MINECART"
+  },
+  {
+    "id": "variable",
+    "path": "arguments",
+    "material": "MAGMA_CREAM"
+  },
+  {
+    "id": "any",
+    "path": "arguments",
+    "material": "WHITE_DYE"
+  },
+  {
+    "id": "enum",
+    "path": "arguments",
+    "material": "HEART_OF_THE_SEA"
+  },
+  {
+    "id": "arguments",
+    "path": "extra",
+    "material": "CHEST"
+  }
+]

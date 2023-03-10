@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { promises as fs } from 'fs';
+import { promises as fs, existsSync, mkdirSync, exists } from 'fs';
 import { createCanvas, loadImage, registerFont } from 'canvas';
 import path from 'path';
 
@@ -86,10 +86,11 @@ const drawIcon = async (icon: CachedIcon) => {
     buffer = await loadIcon(
       `https://mc-heads.net/head/${getPlayerHeadId(texture)}`
     );
-  } else
+  } else {
     buffer = await loadIcon(
       `https://raw.githubusercontent.com/Owen1212055/mc-assets/main/assets/${icon.material}.png`
     );
+  }
 
   const image = await loadImage(buffer);
 
@@ -164,6 +165,21 @@ const drawIcon = async (icon: CachedIcon) => {
       exitIfAnyErrors();
 
       success(`created ${category} icons`);
+    })
+  );
+
+  info('creating extra icons...');
+
+  const extraIcons: (CachedIcon & { path: string })[] = JSON.parse(
+    await fs.readFile(path.resolve(ICONS_DIR, 'extra_icons.json'), 'utf-8')
+  );
+
+  await Promise.all(
+    extraIcons.map(async (icon) => {
+      const dir = path.resolve(ICONS_DIR, icon.path);
+      if (!existsSync(dir)) mkdirSync(dir);
+
+      return fs.writeFile(`${dir}/${icon.id}.png`, await drawIcon(icon));
     })
   );
 

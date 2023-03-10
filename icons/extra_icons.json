@@ -75,6 +75,21 @@
     "material": "EMERALD_ORE"
   },
   {
+    "id": "player",
+    "path": "events/categories",
+    "material": "DIAMOND_BLOCK"
+  },
+  {
+    "id": "entity",
+    "path": "events/categories",
+    "material": "GOLD_BLOCK"
+  },
+  {
+    "id": "world",
+    "path": "events/categories",
+    "material": "REDSTONE_BLOCK"
+  },
+  {
     "id": "number",
     "path": "arguments",
     "material": "SLIME_BALL"
@@ -148,5 +163,10 @@
     "id": "arguments",
     "path": "extra",
     "material": "CHEST"
+  },
+  {
+    "id": "game_values",
+    "path": "extra",
+    "material": "NAME_TAG"
   }
 ]

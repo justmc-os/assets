@@ -13,7 +13,7 @@ export type BasicGameValue = BaseGameValue & {
 export type ListGameValue = BaseGameValue & {
   type: ValueTypes['LIST'];
 
-  elementType: ValueTypes;
+  elementType: ValueType;
 };
 
 export type DictionaryGameValue = BaseGameValue & {

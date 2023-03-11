@@ -297,7 +297,7 @@ const getArguments = (
       const ni = matches(contents, ACTION_NAME)[0];
       if (!ni) return error(`Could not find action in file: ${file}`);
       const [, name, id] = ni;
-      const { icon: patchIcon, ...patch } = patches[id] || {};
+      const { icon: patchIcon, args, ...patch } = patches[id] || {};
 
       if (!icons[name]) {
         if (!patchIcon)
@@ -323,7 +323,7 @@ const getArguments = (
         category,
         subcategory: icon?.subcategory || null,
         type,
-        args: getArguments(id, enums, patch?.['args'] || {}, contents),
+        args: getArguments(id, enums, args || {}, contents),
         ...(icon?.worksWith?.length ? { worksWith: icon.worksWith } : {}),
         ...(icon?.additionalInfo?.length
           ? { additionalInfo: icon.additionalInfo }

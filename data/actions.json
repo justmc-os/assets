@@ -8943,33 +8943,146 @@
     "category": "if_variable",
     "subcategory": null,
     "type": "container",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          9
+        ],
+        "descriptionSlots": [
+          18
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "values",
+        "plural": true,
+        "type": "any",
+        "valueSlots": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "descriptionSlots": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
       }
-    }
+    ]
   },
   {
     "id": "if_variable_list_is_empty",
     "category": "if_variable",
     "subcategory": null,
     "type": "container",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "elementType": "any"
       }
-    }
+    ]
   },
   {
     "id": "if_variable_list_value_equals",
     "category": "if_variable",
     "subcategory": null,
     "type": "container",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          0
+        ],
+        "descriptionSlots": [
+          9
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "index",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          18
+        ],
+        "descriptionSlots": [
+          27
+        ],
+        "size": "int"
+      },
+      {
+        "id": "values",
+        "plural": true,
+        "type": "any",
+        "valueSlots": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "descriptionSlots": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
       }
-    }
+    ]
   },
   {
     "id": "if_variable_location_is_near",
@@ -9053,24 +9166,101 @@
     "category": "if_variable",
     "subcategory": null,
     "type": "container",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "keyType": "any",
         "valueType": "any"
+      },
+      {
+        "id": "key",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
       }
-    }
+    ]
   },
   {
     "id": "if_variable_map_value_equals",
     "category": "if_variable",
     "subcategory": null,
     "type": "container",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          0
+        ],
+        "descriptionSlots": [
+          9
+        ],
         "keyType": "any",
         "valueType": "any"
+      },
+      {
+        "id": "key",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          18
+        ],
+        "descriptionSlots": [
+          27
+        ]
+      },
+      {
+        "id": "values",
+        "plural": true,
+        "type": "any",
+        "valueSlots": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "descriptionSlots": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
       }
-    }
+    ]
   },
   {
     "id": "if_variable_not_equals",
@@ -13723,23 +13913,85 @@
     "category": "repeat",
     "subcategory": null,
     "type": "container",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "index_variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "value_variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
         "elementType": "any"
       }
-    }
+    ]
   },
   {
     "id": "repeat_for_each_map_entry",
     "category": "repeat",
     "subcategory": null,
     "type": "container",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "key_variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "value_variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
         "keyType": "any",
         "valueType": "any"
       }
-    }
+    ]
   },
   {
     "id": "repeat_forever",
@@ -14845,30 +15097,88 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list_1": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "list_1",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "elementType": "any"
       },
-      "list_2": {
+      {
+        "id": "list_2",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
         "elementType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_append_map",
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "keyType": "any",
         "valueType": "any"
       },
-      "other_map": {
+      {
+        "id": "other_map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
         "keyType": "any",
         "valueType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_append_value",
@@ -15498,14 +15808,43 @@
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "keys": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "keys",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "elementType": "any"
       },
-      "values": {
+      {
+        "id": "values",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
         "elementType": "any"
       }
-    },
+    ],
     "additionalInfo": [
       "clears_map_if_exists"
     ]
@@ -15738,8 +16077,70 @@
     "category": "set_variable",
     "subcategory": "text",
     "type": "basic",
-    "args": {
-      "format": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "time",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ],
+        "size": "long"
+      },
+      {
+        "id": "pattern",
+        "plural": false,
+        "type": "text",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "zone_id",
+        "plural": false,
+        "type": "text",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
+      },
+      {
+        "id": "locale",
+        "plural": false,
+        "type": "text",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ]
+      },
+      {
+        "id": "format",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          16
+        ],
         "values": [
           "CUSTOM",
           "DD_MM_YYYY_HH_MM_S",
@@ -15755,7 +16156,7 @@
           "S_S"
         ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_gaussian_distribution",
@@ -17271,44 +17672,171 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "value",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
+      },
+      {
+        "id": "search_mode",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          16
+        ],
+        "values": [
+          "FIRST",
+          "LAST"
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_list_length",
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
         "elementType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_list_random_value",
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
         "elementType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_list_value",
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "number",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
+        "size": "int"
+      },
+      {
+        "id": "remove",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          26
+        ],
+        "values": [
+          "TRUE",
+          "FALSE"
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_list_variables",
@@ -17377,60 +17905,206 @@
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
         "keyType": "any",
         "valueType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_map_keys_by_value",
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "keyType": "any",
         "valueType": "any"
+      },
+      {
+        "id": "value",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
+      },
+      {
+        "id": "find_mode",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          16
+        ],
+        "values": [
+          "FIRST",
+          "LAST",
+          "ALL"
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_map_size",
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
         "keyType": "any",
         "valueType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_map_value",
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "keyType": "any",
         "valueType": "any"
+      },
+      {
+        "id": "key",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
+      },
+      {
+        "id": "default_value",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          16
+        ],
+        "descriptionSlots": [
+          25
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_map_values",
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
         "keyType": "any",
         "valueType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_get_midpoint_between_vectors",
@@ -18332,22 +19006,141 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "number",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
+        "size": "int"
+      },
+      {
+        "id": "value",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          16
+        ],
+        "descriptionSlots": [
+          25
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_join_text",
     "category": "set_variable",
     "subcategory": "text",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "separator",
+        "plural": false,
+        "type": "text",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "prefix",
+        "plural": false,
+        "type": "text",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ]
+      },
+      {
+        "id": "postfix",
+        "plural": false,
+        "type": "text",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
+      },
+      {
+        "id": "limit",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
+        "size": "int"
+      },
+      {
+        "id": "truncated",
+        "plural": false,
+        "type": "text",
+        "valueSlots": [
+          16
+        ],
+        "descriptionSlots": [
+          25
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_location_relative",
@@ -19025,11 +19818,31 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
         "elementType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_random_location",
@@ -19132,11 +19945,137 @@
     "category": "set_variable",
     "subcategory": "world",
     "type": "basic",
-    "args": {
-      "entities": {
+    "args": [
+      {
+        "id": "start",
+        "plural": false,
+        "type": "location",
+        "valueSlots": [
+          1
+        ],
+        "descriptionSlots": [
+          0
+        ]
+      },
+      {
+        "id": "ray_size",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          9
+        ],
+        "size": "double"
+      },
+      {
+        "id": "max_distance",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          19
+        ],
+        "descriptionSlots": [
+          18
+        ],
+        "size": "double"
+      },
+      {
+        "id": "ray_collision_mode",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          8
+        ],
+        "values": [
+          "ONLY_BLOCKS",
+          "BLOCKS_AND_ENTITIES",
+          "ONLY_ENTITIES"
+        ]
+      },
+      {
+        "id": "ignore_passable_blocks",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          17
+        ],
+        "values": [
+          "TRUE",
+          "FALSE"
+        ]
+      },
+      {
+        "id": "fluid_collision_mode",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          26
+        ],
+        "values": [
+          "NEVER",
+          "SOURCE_ONLY",
+          "ALWAYS"
+        ]
+      },
+      {
+        "id": "variable_for_hit_location",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "variable_for_hit_block_location",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ]
+      },
+      {
+        "id": "variable_for_hit_block_face",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
+      },
+      {
+        "id": "variable_for_hit_entity_uuid",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ]
+      },
+      {
+        "id": "entities",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          16
+        ],
+        "descriptionSlots": [
+          25
+        ],
         "elementType": "text"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_reflect_vector_product",
@@ -19644,34 +20583,161 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "value",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_remove_list_value_at_index",
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "index",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
+        "size": "int"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_remove_map_entry",
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          1
+        ],
+        "descriptionSlots": [
+          0
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          9
+        ],
         "keyType": "any",
         "valueType": "any"
+      },
+      {
+        "id": "key",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          19
+        ],
+        "descriptionSlots": [
+          18
+        ]
+      },
+      {
+        "id": "values",
+        "plural": true,
+        "type": "any",
+        "valueSlots": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "descriptionSlots": [
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_remove_text",
@@ -19877,11 +20943,31 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
         "elementType": "any"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_root",
@@ -20832,12 +21918,43 @@
     "category": "set_variable",
     "subcategory": "item",
     "type": "basic",
-    "args": {
-      "enchantments": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "item",
+        "plural": false,
+        "type": "item",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ]
+      },
+      {
+        "id": "enchantments",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          15
+        ],
+        "descriptionSlots": [
+          24
+        ],
         "keyType": "text",
         "valueType": "number"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_set_item_lore",
@@ -21290,11 +22407,54 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "number",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
+        "size": "int"
+      },
+      {
+        "id": "value",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          16
+        ],
+        "descriptionSlots": [
+          25
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_set_location_direction",
@@ -21342,12 +22502,54 @@
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "keyType": "any",
         "valueType": "any"
+      },
+      {
+        "id": "key",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ]
+      },
+      {
+        "id": "value",
+        "plural": false,
+        "type": "any",
+        "valueSlots": [
+          16
+        ],
+        "descriptionSlots": [
+          25
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_set_particle_amount",
@@ -22490,11 +23692,43 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          11
+        ],
+        "descriptionSlots": [
+          20
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          13
+        ],
+        "descriptionSlots": [
+          22
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "sort_mode",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          15
+        ],
+        "values": [
+          "ASCENDING",
+          "DESCENDING"
+        ]
       }
-    },
+    ],
     "worksWith": [
       "numbers",
       "texts",
@@ -22506,12 +23740,56 @@
     "category": "set_variable",
     "subcategory": "map",
     "type": "basic",
-    "args": {
-      "map": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "map",
+        "plural": false,
+        "type": "dictionary",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "keyType": "any",
         "valueType": "any"
+      },
+      {
+        "id": "sort_order",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          14
+        ],
+        "values": [
+          "ASCENDING",
+          "DESCENDING"
+        ]
+      },
+      {
+        "id": "sort_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          16
+        ],
+        "values": [
+          "KEYS",
+          "VALUES"
+        ]
       }
-    }
+    ]
   },
   {
     "id": "set_variable_split_text",
@@ -23124,11 +24402,55 @@
     "category": "set_variable",
     "subcategory": "list",
     "type": "basic",
-    "args": {
-      "list": {
+    "args": [
+      {
+        "id": "variable",
+        "plural": false,
+        "type": "variable",
+        "valueSlots": [
+          10
+        ],
+        "descriptionSlots": [
+          19
+        ]
+      },
+      {
+        "id": "list",
+        "plural": false,
+        "type": "list",
+        "valueSlots": [
+          12
+        ],
+        "descriptionSlots": [
+          21
+        ],
         "elementType": "any"
+      },
+      {
+        "id": "start",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          14
+        ],
+        "descriptionSlots": [
+          23
+        ],
+        "size": "int"
+      },
+      {
+        "id": "end",
+        "plural": false,
+        "type": "number",
+        "valueSlots": [
+          16
+        ],
+        "descriptionSlots": [
+          25
+        ],
+        "size": "int"
       }
-    }
+    ]
   },
   {
     "id": "set_variable_trim_text",

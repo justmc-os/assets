@@ -45,6 +45,19 @@
         "descriptionSlots": [
           23
         ]
+      },
+      {
+        "id": "type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          26
+        ],
+        "values": [
+          "WARNING",
+          "ERROR",
+          "FATAL"
+        ]
       }
     ],
     "additionalInfo": [
@@ -83,6 +96,19 @@
         ],
         "descriptionSlots": [
           22
+        ]
+      },
+      {
+        "id": "exception_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          26
+        ],
+        "values": [
+          "WARNING",
+          "ERROR",
+          "ALL"
         ]
       }
     ],
@@ -1304,7 +1330,23 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "axolotl_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "BLUE",
+          "CYAN",
+          "GOLD",
+          "LUCY",
+          "WILD"
+        ]
+      }
+    ],
     "worksWith": [
       "axolotl"
     ]
@@ -1405,7 +1447,29 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "cat_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "ALL_BLACK",
+          "BLACK",
+          "BRITISH_SHORTHAIR",
+          "CALICO",
+          "JELLIE",
+          "PERSIAN",
+          "RAGDOLL",
+          "RED",
+          "SIAMESE",
+          "TABBY",
+          "WHITE"
+        ]
+      }
+    ],
     "worksWith": [
       "cat"
     ]
@@ -1654,7 +1718,29 @@
     "category": "entity",
     "subcategory": "goals",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "phase",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "BREATH_ATTACK",
+          "CHARGE_PLAYER",
+          "CIRCLING",
+          "DYING",
+          "FLY_TO_PORTAL",
+          "HOVER",
+          "LAND_ON_PORTAL",
+          "LEAVE_PORTAL",
+          "ROAR_BEFORE_ATTACK",
+          "SEARCH_FOR_BREATH_ATTACK_TARGET",
+          "STRAFING"
+        ]
+      }
+    ],
     "worksWith": [
       "ender_dragon"
     ]
@@ -1949,7 +2035,21 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "frog_variant",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "COLD",
+          "TEMPERATE",
+          "WARM"
+        ]
+      }
+    ],
     "worksWith": [
       "frog"
     ]
@@ -2240,7 +2340,22 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "BROWN",
+          "CREAMY",
+          "GRAY",
+          "WHITE"
+        ]
+      }
+    ],
     "worksWith": [
       "llama"
     ]
@@ -2339,7 +2454,20 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "cow_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "BROWN",
+          "RED"
+        ]
+      }
+    ],
     "worksWith": [
       "mushroom_cow"
     ]
@@ -2362,6 +2490,23 @@
           "HIDDEN",
           "BOTH"
         ]
+      },
+      {
+        "id": "gene_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          14
+        ],
+        "values": [
+          "NORMAL",
+          "LAZY",
+          "WORRIED",
+          "PLAYFUL",
+          "BROWN",
+          "WEAK",
+          "AGGRESSIVE"
+        ]
       }
     ],
     "worksWith": [
@@ -2373,7 +2518,23 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "parrot_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "BLUE",
+          "CYAN",
+          "GRAY",
+          "GREEN",
+          "RED"
+        ]
+      }
+    ],
     "worksWith": [
       "parrot"
     ]
@@ -2535,7 +2696,25 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "rabbit_type",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "BLACK",
+          "BLACK_AND_WHITE",
+          "BROWN",
+          "GOLD",
+          "SALT_AND_PEPPER",
+          "THE_KILLER_BUNNY",
+          "WHITE"
+        ]
+      }
+    ],
     "worksWith": [
       "rabbit"
     ]
@@ -2949,7 +3128,25 @@
     "category": "entity",
     "subcategory": "appearance",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "biome",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "DESERT",
+          "JUNGLE",
+          "PLAINS",
+          "SAVANNA",
+          "SNOW",
+          "SWAMP",
+          "TAIGA"
+        ]
+      }
+    ],
     "worksWith": [
       "villager"
     ]
@@ -2982,7 +3179,33 @@
     "category": "entity",
     "subcategory": "settings",
     "type": "basic",
-    "args": [],
+    "args": [
+      {
+        "id": "profession",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "NONE",
+          "ARMORER",
+          "BUTCHER",
+          "CARTOGRAPHER",
+          "CLERIC",
+          "FARMER",
+          "FISHERMAN",
+          "FLETCHER",
+          "LEATHERWORKER",
+          "LIBRARIAN",
+          "MASON",
+          "NITWIT",
+          "SHEPHERD",
+          "TOOLSMITH",
+          "WEAPONSMITH"
+        ]
+      }
+    ],
     "worksWith": [
       "villager",
       "zombie_villager"
@@ -6965,7 +7188,47 @@
     "category": "if_game",
     "subcategory": null,
     "type": "container",
-    "args": []
+    "args": [
+      {
+        "id": "cause",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "BLOCK_EXPLOSION",
+          "CONTACT",
+          "CRAMMING",
+          "CUSTOM",
+          "DRAGON_BREATH",
+          "DROWNING",
+          "DRYOUT",
+          "ENTITY_ATTACK",
+          "ENTITY_EXPLOSION",
+          "ENTITY_SWEEP_ATTACK",
+          "FALL",
+          "FALLING_BLOCK",
+          "FIRE",
+          "FIRE_TICK",
+          "FLY_INTO_WALL",
+          "FREEZE",
+          "HOT_FLOOR",
+          "LAVA",
+          "LIGHTNING",
+          "MAGIC",
+          "MELTING",
+          "POISON",
+          "PROJECTILE",
+          "STARVATION",
+          "SUFFOCATION",
+          "SUICIDE",
+          "THORNS",
+          "VOID",
+          "WITHER"
+        ]
+      }
+    ]
   },
   {
     "id": "if_game_event_attack_is_critical",
@@ -7188,7 +7451,26 @@
     "category": "if_game",
     "subcategory": null,
     "type": "container",
-    "args": []
+    "args": [
+      {
+        "id": "cause",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          13
+        ],
+        "values": [
+          "ARROW",
+          "ENDER_CRYSTAL",
+          "EXPLOSION",
+          "FIREBALL",
+          "FLINT_AND_STEEL",
+          "LAVA",
+          "LIGHTNING",
+          "SPREAD"
+        ]
+      }
+    ]
   },
   {
     "id": "if_game_instrument_equals",
@@ -7670,6 +7952,21 @@
     "type": "container",
     "args": [
       {
+        "id": "privilege",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          12
+        ],
+        "values": [
+          "BUILDER",
+          "DEVELOPER",
+          "BUILDER_AND_DEVELOPER",
+          "WHITELISTED",
+          "OWNER"
+        ]
+      },
+      {
         "id": "exact",
         "plural": false,
         "type": "enum",
@@ -8147,6 +8444,19 @@
           35
         ],
         "size": "int"
+      },
+      {
+        "id": "fluid_mode",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          53
+        ],
+        "values": [
+          "NEVER",
+          "SOURCE_ONLY",
+          "ALWAYS"
+        ]
       }
     ]
   },
@@ -11129,6 +11439,26 @@
         "descriptionSlots": [
           23
         ]
+      },
+      {
+        "id": "source",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          26
+        ],
+        "values": [
+          "MASTER",
+          "AMBIENT",
+          "BLOCK",
+          "HOSTILE",
+          "MUSIC",
+          "NEUTRAL",
+          "PLAYER",
+          "RECORD",
+          "VOICE",
+          "WEATHER"
+        ]
       }
     ]
   },
@@ -11217,6 +11547,26 @@
         ],
         "descriptionSlots": [
           52
+        ]
+      },
+      {
+        "id": "source",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          51
+        ],
+        "values": [
+          "MASTER",
+          "AMBIENT",
+          "BLOCK",
+          "HOSTILE",
+          "MUSIC",
+          "NEUTRAL",
+          "PLAYER",
+          "RECORD",
+          "VOICE",
+          "WEATHER"
         ]
       }
     ]
@@ -12254,6 +12604,38 @@
           24
         ],
         "size": "int"
+      },
+      {
+        "id": "color",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          26
+        ],
+        "values": [
+          "PINK",
+          "BLUE",
+          "RED",
+          "GREEN",
+          "YELLOW",
+          "PURPLE",
+          "WHITE"
+        ]
+      },
+      {
+        "id": "style",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          17
+        ],
+        "values": [
+          "PROGRESS",
+          "NOTCHED_6",
+          "NOTCHED_10",
+          "NOTCHED_12",
+          "NOTCHED_20"
+        ]
       },
       {
         "id": "sky_effect",
@@ -13694,6 +14076,26 @@
           23,
           24,
           25
+        ]
+      },
+      {
+        "id": "source",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          26
+        ],
+        "values": [
+          "MASTER",
+          "AMBIENT",
+          "BLOCK",
+          "HOSTILE",
+          "MUSIC",
+          "NEUTRAL",
+          "PLAYER",
+          "RECORD",
+          "VOICE",
+          "WEATHER"
         ]
       }
     ]
@@ -17078,6 +17480,19 @@
           "CHEST",
           "LEGGINGS",
           "BOOTS"
+        ]
+      },
+      {
+        "id": "operation",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          16
+        ],
+        "values": [
+          "MULTIPLY_SCALAR_1",
+          "ADD_NUMBER",
+          "ADD_SCALAR"
         ]
       }
     ]
@@ -21652,6 +22067,19 @@
           "CHEST",
           "LEGGINGS",
           "BOOTS"
+        ]
+      },
+      {
+        "id": "operation",
+        "plural": false,
+        "type": "enum",
+        "valueSlots": [
+          33
+        ],
+        "values": [
+          "MULTIPLY_SCALAR_1",
+          "ADD_NUMBER",
+          "ADD_SCALAR"
         ]
       }
     ]

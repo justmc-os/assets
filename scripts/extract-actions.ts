@@ -34,7 +34,7 @@ const ENUMS_PATCHES_FILE = path.resolve(PATCHES_DIR, 'enums.json');
 const ACTION_NAME = /object\s*(.*?)\s*:.*?"(.*?)"/gms;
 
 const ARGUMENT =
-  /by ([a-z]*)(List)?<?([\w]*)>?\("(.*?)"(?:(?:,\s*(false))|(?:.*))\)\s*{((?:.|\n)*?)}/gm;
+  /val\s*.*\s*by\s*([a-z]*)(List)?<?([^<>(){}]*)>?\("(.*?)"(?:(?:,\s*(false))|(?:.*))\)\s*{((?:.|\n)*?)}/gm;
 
 const ARGUMENT_VALUE_SLOTS = /parsing\s*=\s*(.*)/;
 const ARGUMENT_DESCRIPTION_SLOTS = /descriptions?\s*=\s*(.*)/;

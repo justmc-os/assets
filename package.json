@@ -1,6 +1,6 @@
 {
   "name": "@justmc/justcode",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Data for JustCode",
   "author": "rqbik",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "extract:actions": "ts-node scripts/extract-actions",
     "extract": "yarn extract:events && yarn extract:game-values && yarn extract:actions",
     "update": "yarn create:cache && yarn extract",
-    "generate": "yarn update && yarn create:icons && yarn create:index && tsc && bash scripts/move-data-to-dist.sh"
+    "generate": "yarn update && yarn create:index && tsc && bash scripts/copy-data-to-dist.sh"
   },
   "files": [
     "dist"

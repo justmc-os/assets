@@ -552,5 +552,70 @@
     "icon": {
       "material": "LEVER"
     }
+  },
+  "set_variable_get_map_key_by_index": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_get_map_value_by_index": {
+    "args": {
+      "map": {
+        "keyType": "any",
+        "valueType": "any"
+      }
+    }
+  },
+  "set_variable_flatten_list": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_remove_list_duplicates": {
+    "args": {
+      "list": {
+        "elementType": "any"
+      }
+    }
+  },
+  "set_variable_set_component_children": {
+    "icon": {
+      "material": "FILLED_MAP"
+    }
+  },
+  "set_variable_component_of_children": {
+    "icon": {
+      "material": "PAPER"
+    }
+  },
+  "player_send_minimessage": {
+    "icon": {
+      "material": "KNOWLEDGE_BOOK"
+    }
+  },
+  "player_send_hover": {
+    "icon": {
+      "material": "ENCHANTED_BOOK"
+    }
+  },
+  "entity_set_camel_dashing": {
+    "icon": {
+      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRiOGEzMzNkZmE5MmU3ZTVhOTVhZDRhZTJkODRiMWJhZmEzM2RjMjhjMDU0OTI1Mjc3ZjYwZTc5ZGFmYzhjNCJ9fX0="
+    }
+  },
+  "entity_set_sniffer_state": {
+    "icon": {
+      "texture": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdhZDkyMGE2NmUzOGNjMzQyNmE1YmZmMDg0NjY3ZTg3NzIxMTY5MTVlMjk4MDk4NTY3YzEzOWYyMjJlMmM0MiJ9fX0="
+    }
+  },
+  "set_variable_get_player_head_value": {
+    "icon": {
+      "texture": "null"
+    }
   }
 }

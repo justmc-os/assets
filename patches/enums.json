@@ -323,5 +323,41 @@
     "STRAFING"
   ],
   "ReportCatcher.ReportType": ["WARNING", "ERROR", "ALL"],
-  "Report.Type": ["WARNING", "ERROR", "FATAL"]
+  "Report.Type": ["WARNING", "ERROR", "FATAL"],
+  "Billboard": ["CENTER", "FIXED", "HORIZONTAL", "VERTICAL"],
+  "ItemDisplay.ItemDisplayTransform": [
+    "FIRSTPERSON_LEFTHAND",
+    "FIRSTPERSON_RIGHTHAND",
+    "FIXED",
+    "GROUND",
+    "GUI",
+    "HEAD",
+    "NONE",
+    "THIRDPERSON_LEFTHAND",
+    "THIRDPERSON_RIGHTHAND"
+  ],
+  "Sniffer.State": [
+    "DIGGING",
+    "FEELING_HAPPY",
+    "IDLING",
+    "RISING",
+    "SCENTING",
+    "SEARCHING",
+    "SNIFFING"
+  ],
+  "TextDisplay.TextAlignment": ["CENTER", "LEFT", "RIGHT"],
+  "DecoratedPot.Side": ["BACK", "FRONT", "LEFT", "RIGHT"],
+  "TextDecoration.State": ["FALSE", "NOT_SET", "TRUE"],
+  "SoundSource": [
+    "AMBIENT",
+    "BLOCK",
+    "HOSTILE",
+    "MASTER",
+    "MUSIC",
+    "NEUTRAL",
+    "PLAYER",
+    "RECORD",
+    "VOICE",
+    "WEATHER"
+  ]
 }

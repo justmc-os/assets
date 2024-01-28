@@ -112,6 +112,32 @@
     "type": "number"
   },
   {
+    "id": "merchant_recipe_count",
+    "type": "number"
+  },
+  {
+    "id": "open_inventory_size",
+    "type": "number",
+    "worksWith": [
+      "players"
+    ]
+  },
+  {
+    "id": "entity_width_x",
+    "type": "number"
+  },
+  {
+    "id": "entity_height",
+    "type": "number"
+  },
+  {
+    "id": "entity_width_z",
+    "type": "number",
+    "worksWith": [
+      "location"
+    ]
+  },
+  {
     "id": "location",
     "type": "location"
   },
@@ -160,6 +186,10 @@
     "type": "text"
   },
   {
+    "id": "hitbox_midpoint_location",
+    "type": "location"
+  },
+  {
     "id": "spawn_location",
     "type": "location"
   },
@@ -170,6 +200,22 @@
   {
     "id": "velocity",
     "type": "vector"
+  },
+  {
+    "id": "body_yaw",
+    "type": "number"
+  },
+  {
+    "id": "block_beneath",
+    "type": "location"
+  },
+  {
+    "id": "blocks_beneath",
+    "type": "list",
+    "worksWith": [
+      "item"
+    ],
+    "elementType": "location"
   },
   {
     "id": "main_hand_item",
@@ -221,7 +267,8 @@
       "firework",
       "arrow",
       "falling_block",
-      "other_projectiles"
+      "other_projectiles",
+      "info"
     ]
   },
   {
@@ -262,6 +309,13 @@
     ]
   },
   {
+    "id": "open_inventory_type",
+    "type": "text",
+    "worksWith": [
+      "player"
+    ]
+  },
+  {
     "id": "gamemode",
     "type": "text",
     "worksWith": [
@@ -296,6 +350,10 @@
     "elementType": "text"
   },
   {
+    "id": "targeted_entity",
+    "type": "text"
+  },
+  {
     "id": "spawn_reason",
     "type": "text"
   },
@@ -303,7 +361,8 @@
     "id": "main_hand",
     "type": "text",
     "worksWith": [
-      "player"
+      "player",
+      "event"
     ]
   },
   {
@@ -348,7 +407,11 @@
     "id": "event_new_location",
     "type": "location",
     "worksWith": [
-      "player_move_event"
+      "player_move_event",
+      "player_jump_event",
+      "player_teleport_event",
+      "player_fail_move_event",
+      "falling_block_land_event"
     ]
   },
   {
@@ -402,6 +465,13 @@
     ]
   },
   {
+    "id": "event_new_potion_effect",
+    "type": "potion",
+    "worksWith": [
+      "player_imbue_potion_cloud_event"
+    ]
+  },
+  {
     "id": "event_power",
     "type": "number",
     "worksWith": [
@@ -420,12 +490,21 @@
     ]
   },
   {
+    "id": "event_items",
+    "type": "list",
+    "worksWith": [
+      "piglin_barter"
+    ],
+    "elementType": "item"
+  },
+  {
     "id": "event_equipment_slot",
     "type": "text",
     "worksWith": [
       "right_click_event",
       "left_click_event",
-      "interact_event"
+      "interact_event",
+      "player_arm_swing_event"
     ]
   },
   {
@@ -435,7 +514,8 @@
       "player_change_slot_event",
       "player_click_own_inventory_event",
       "player_click_inventory_event",
-      "player_craft_item_event"
+      "player_craft_item_event",
+      "player_pick_item"
     ]
   },
   {
@@ -444,7 +524,8 @@
     "worksWith": [
       "player_change_slot_event",
       "player_own_inventory_click_event",
-      "player_other_inventory_click_event"
+      "player_other_inventory_click_event",
+      "player_pick_item"
     ]
   },
   {
@@ -510,6 +591,14 @@
     ]
   },
   {
+    "id": "event_tree_type",
+    "type": "text",
+    "worksWith": [
+      "player_structure_grow_event",
+      "structure_grow_event"
+    ]
+  },
+  {
     "id": "event_experience",
     "type": "number",
     "worksWith": [
@@ -557,7 +646,53 @@
     "id": "event_teleport_cause",
     "type": "text",
     "worksWith": [
-      "player_teleport_event"
+      "player_teleport_event",
+      "enderman_escape_event"
+    ]
+  },
+  {
+    "id": "event_ticks_held_for",
+    "type": "number",
+    "worksWith": [
+      "player_stop_using_item"
+    ]
+  },
+  {
+    "id": "event_query_info",
+    "type": "text",
+    "worksWith": [
+      "player_query_block_info",
+      "player_query_entity_info"
+    ]
+  },
+  {
+    "id": "event_fail_move_reason",
+    "type": "text",
+    "worksWith": [
+      "player_fail_move_event"
+    ]
+  },
+  {
+    "id": "event_transformed_entities",
+    "type": "list",
+    "worksWith": [
+      "entity_transform_event"
+    ],
+    "elementType": "text"
+  },
+  {
+    "id": "event_transform_reason",
+    "type": "text",
+    "worksWith": [
+      "entity_transform_event"
+    ]
+  },
+  {
+    "id": "event_replaced_block",
+    "type": "text",
+    "worksWith": [
+      "player_place_block_event",
+      "world"
     ]
   },
   {
@@ -647,6 +782,14 @@
   },
   {
     "id": "world_id",
-    "type": "text"
+    "type": "text",
+    "worksWith": [
+      "creative_plus.menu.game_values.general.title",
+      "creative_plus.menu.game_values.$name.title",
+      "creative_plus.game_value.exit.name",
+      "creative_plus.game_value.exit.description",
+      "creative_plus.game_value.previous_page.name",
+      "creative_plus.game_value.next_page.name"
+    ]
   }
 ]

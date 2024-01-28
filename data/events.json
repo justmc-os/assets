@@ -48,6 +48,34 @@
     "cancellable": true
   },
   {
+    "id": "block_damage",
+    "category": "player",
+    "cancellable": true
+  },
+  {
+    "id": "block_damage_abort",
+    "category": "player",
+    "cancellable": false
+  },
+  {
+    "id": "player_structure_grow",
+    "category": "player",
+    "cancellable": true
+  },
+  {
+    "id": "player_query_block_info",
+    "category": "player",
+    "cancellable": true,
+    "additionalInfo": [
+      "sneaking_not_fire_event"
+    ]
+  },
+  {
+    "id": "player_arm_swing",
+    "category": "player",
+    "cancellable": true
+  },
+  {
     "id": "player_right_click_entity",
     "category": "player",
     "cancellable": true
@@ -93,6 +121,14 @@
     "cancellable": true
   },
   {
+    "id": "player_query_entity_info",
+    "category": "player",
+    "cancellable": true,
+    "additionalInfo": [
+      "sneaking_not_fire_event"
+    ]
+  },
+  {
     "id": "player_open_inventory",
     "category": "player",
     "cancellable": true
@@ -131,6 +167,14 @@
     "id": "player_change_slot",
     "category": "player",
     "cancellable": true
+  },
+  {
+    "id": "player_pick_item",
+    "category": "player",
+    "cancellable": true,
+    "additionalInfo": [
+      "not_fired_in_creative"
+    ]
   },
   {
     "id": "player_shot_bow",
@@ -177,6 +221,11 @@
     "cancellable": false
   },
   {
+    "id": "player_stop_using_item",
+    "category": "player",
+    "cancellable": true
+  },
+  {
     "id": "player_edit_book",
     "category": "player",
     "cancellable": true
@@ -190,6 +239,19 @@
     "id": "player_move",
     "category": "player",
     "cancellable": true
+  },
+  {
+    "id": "player_fail_move",
+    "category": "player",
+    "cancellable": false
+  },
+  {
+    "id": "player_load_crossbow",
+    "category": "player",
+    "cancellable": true,
+    "worksWith": [
+      "crossbow"
+    ]
   },
   {
     "id": "player_jump",
@@ -247,7 +309,17 @@
     "cancellable": true
   },
   {
-    "id": "player_vehicle_jump"
+    "id": "player_vehicle_jump",
+    "category": "player",
+    "cancellable": false,
+    "additionalInfo": [
+      "can_be_used_to_detect_space"
+    ]
+  },
+  {
+    "id": "player_vehicle_move",
+    "category": "player",
+    "cancellable": false
   },
   {
     "id": "player_take_damage",
@@ -270,6 +342,11 @@
     "cancellable": true
   },
   {
+    "id": "player_resurrect",
+    "category": "player",
+    "cancellable": true
+  },
+  {
     "id": "player_heal",
     "category": "player",
     "cancellable": true
@@ -286,6 +363,11 @@
   },
   {
     "id": "projectile_damage_player",
+    "category": "player",
+    "cancellable": true
+  },
+  {
+    "id": "player_pre_attack_entity",
     "category": "player",
     "cancellable": true
   },
@@ -348,6 +430,11 @@
     "cancellable": true
   },
   {
+    "id": "entity_resurrect",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
     "id": "entity_death",
     "category": "entity",
     "cancellable": true
@@ -360,6 +447,16 @@
       "evoker",
       "illusioner"
     ]
+  },
+  {
+    "id": "enderman_escape",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "enderman_attack_player",
+    "category": "entity",
+    "cancellable": true
   },
   {
     "id": "firework_explode",
@@ -377,6 +474,11 @@
     ]
   },
   {
+    "id": "projectile_launch",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
     "id": "projectile_damage_entity",
     "category": "entity",
     "cancellable": true
@@ -388,6 +490,11 @@
   },
   {
     "id": "projectile_hit",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "projective_collide",
     "category": "entity",
     "cancellable": true
   },
@@ -427,6 +534,36 @@
     "cancellable": true
   },
   {
+    "id": "sheep_regrow_wool",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "witch_throw_potion",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "entity_shot_bow",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "entity_load_crossbow",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "piglin_barter",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "entity_transform",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
     "id": "world_start",
     "category": "world",
     "cancellable": false
@@ -451,15 +588,12 @@
     "cancellable": false
   },
   {
-    "id": "block_ignite"
+    "id": "block_ignite",
+    "category": "world",
+    "cancellable": false
   },
   {
     "id": "block_burn",
-    "category": "world",
-    "cancellable": true
-  },
-  {
-    "id": "block_damage",
     "category": "world",
     "cancellable": true
   },
@@ -508,6 +642,11 @@
   },
   {
     "id": "leaves_decay",
+    "category": "world",
+    "cancellable": true
+  },
+  {
+    "id": "structure_grow",
     "category": "world",
     "cancellable": true
   },
@@ -615,8 +754,26 @@
     "cancellable": true
   },
   {
+    "id": "sculk_bloom",
+    "category": "world",
+    "cancellable": true
+  },
+  {
     "id": "falling_block_land",
     "category": "world",
     "cancellable": true
+  },
+  {
+    "id": "item_moved_into_container",
+    "category": "world",
+    "cancellable": true
+  },
+  {
+    "id": "hopper_pickup_item",
+    "category": "world",
+    "cancellable": true,
+    "additionalInfo": [
+      "item_is_victim_entity"
+    ]
   }
 ]

@@ -45,5 +45,14 @@
     "icon": {
       "texture": "none"
     }
+  },
+  "blocks_beneath": {
+    "elementType": "location"
+  },
+  "event_items": {
+    "elementType": "item"
+  },
+  "event_transformed_entities": {
+    "elementType": "text"
   }
 }

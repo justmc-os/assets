@@ -1,13 +1,13 @@
 {
-  "name": "@justmc/justcode",
-  "version": "1.0.5",
-  "description": "Data for JustCode",
+  "name": "@justmc/data",
+  "version": "1.0.4",
+  "description": "JustMC data",
   "author": "rqbik",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
     "clean": "rm -rf .cache",
     "create:cache": "yarn clean && ts-node scripts/create-cache",
     "create:icons": "ts-node scripts/create-icons",
@@ -17,20 +17,25 @@
     "extract:actions": "ts-node scripts/extract-actions",
     "extract": "yarn extract:events && yarn extract:game-values && yarn extract:actions",
     "update": "yarn create:cache && yarn extract",
-    "generate": "yarn update && yarn create:index && tsc && bash scripts/copy-data-to-dist.sh"
+    "generate": "yarn update && yarn create:index && yarn build"
   },
   "files": [
-    "dist"
+    "dist",
+    "data"
   ],
   "devDependencies": {
     "@gitbeaker/node": "^35.8.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^18.14.1",
     "@types/node-fetch": "^2.6.2",
     "canvas": "^2.11.0",
     "chalk": "4",
     "dotenv": "^16.0.3",
     "node-fetch": "2",
+    "rollup": "^4.9.6",
     "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
     "typescript": "^4.9.5"
   },
   "keywords": [

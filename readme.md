@@ -1,3 +1,3 @@
-# JustMC Creative+ Assets
+# JustMC Data
 
-[![npm version](https://badge.fury.io/js/@justmc%2Fjustcode.svg)](https://www.npmjs.com/package/@justmc/justcode)
+[![npm version](https://badge.fury.io/js/@justmc%2Fdata.svg)](https://www.npmjs.com/package/@justmc/data)

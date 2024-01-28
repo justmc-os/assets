@@ -25,15 +25,18 @@ export { default as EventsData } from './EventsData';
 export * from './GameValuesData';
 export { default as GameValuesData } from './GameValuesData';
 
-export const actions: ActionsData = require('./data/actions.json');
-export const events: EventsData = require('./data/events.json');
-export const gameValues: GameValuesData = require('./data/game_values.json');
+// @ts-ignore
+import actionsData from '../data/actions.json';
 
-export default {
-  actions,
-  events,
-  gameValues,
-};
+// @ts-ignore
+import eventsData from '../data/events.json';
+
+// @ts-ignore
+import gameValuesData from '../data/game_values.json';
+
+export const actions = actionsData as ActionsData;
+export const events = eventsData as EventsData;
+export const gameValues = gameValuesData as GameValuesData;
 `.trim();
 
 (async () => {

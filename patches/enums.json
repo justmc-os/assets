@@ -359,5 +359,6 @@
     "RECORD",
     "VOICE",
     "WEATHER"
-  ]
+  ],
+  "ParticleCubeType": ["SOLID", "HOLLOW", "WIREFRAME"]
 }

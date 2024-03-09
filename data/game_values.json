@@ -32,6 +32,14 @@
     "type": "number"
   },
   {
+    "id": "attack_cooldown_ticks",
+    "type": "number"
+  },
+  {
+    "id": "attack_cooldown_strength",
+    "type": "number"
+  },
+  {
     "id": "armor_points",
     "type": "number"
   },
@@ -465,6 +473,20 @@
     ]
   },
   {
+    "id": "event_exhaustion_amount",
+    "type": "number",
+    "worksWith": [
+      "player_exhaustion_event"
+    ]
+  },
+  {
+    "id": "event_exhaustion_reason",
+    "type": "text",
+    "worksWith": [
+      "player_exhaustion_event"
+    ]
+  },
+  {
     "id": "event_new_potion_effect",
     "type": "potion",
     "worksWith": [
@@ -763,14 +785,6 @@
   {
     "id": "world_weather",
     "type": "text"
-  },
-  {
-    "id": "server_stopped_time",
-    "type": "number"
-  },
-  {
-    "id": "action_count_per_tick",
-    "type": "number"
   },
   {
     "id": "owner_uuid",

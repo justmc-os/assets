@@ -1,6 +1,6 @@
 {
   "name": "@justmc/data",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "JustMC data",
   "author": "rqbik",
   "license": "MIT",
@@ -46,5 +46,8 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }

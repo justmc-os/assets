@@ -177,6 +177,16 @@
     ]
   },
   {
+    "id": "player_furnace_extract",
+    "category": "player",
+    "cancellable": false,
+    "worksWith": [
+      "furnace",
+      "blast_furnace",
+      "smoker"
+    ]
+  },
+  {
     "id": "player_shot_bow",
     "category": "player",
     "cancellable": true,
@@ -223,7 +233,7 @@
   {
     "id": "player_stop_using_item",
     "category": "player",
-    "cancellable": true
+    "cancellable": false
   },
   {
     "id": "player_edit_book",
@@ -357,6 +367,11 @@
     "cancellable": true
   },
   {
+    "id": "player_exhaustion",
+    "category": "player",
+    "cancellable": true
+  },
+  {
     "id": "player_projectile_hit",
     "category": "player",
     "cancellable": true
@@ -368,6 +383,11 @@
   },
   {
     "id": "player_pre_attack_entity",
+    "category": "player",
+    "cancellable": true
+  },
+  {
+    "id": "elder_guardian_appears_at_player",
     "category": "player",
     "cancellable": true
   },
@@ -555,6 +575,11 @@
   },
   {
     "id": "piglin_barter",
+    "category": "entity",
+    "cancellable": true
+  },
+  {
+    "id": "goat_ram_entity",
     "category": "entity",
     "cancellable": true
   },
@@ -774,6 +799,36 @@
     "cancellable": true,
     "additionalInfo": [
       "item_is_victim_entity"
+    ]
+  },
+  {
+    "id": "furnace_smelt",
+    "category": "world",
+    "cancellable": true,
+    "worksWith": [
+      "furnace",
+      "blast_furnace",
+      "smoker"
+    ]
+  },
+  {
+    "id": "furnace_start_smelt",
+    "category": "world",
+    "cancellable": false,
+    "worksWith": [
+      "furnace",
+      "blast_furnace",
+      "smoker"
+    ]
+  },
+  {
+    "id": "furnace_burn",
+    "category": "world",
+    "cancellable": true,
+    "worksWith": [
+      "furnace",
+      "blast_furnace",
+      "smoker"
     ]
   }
 ]

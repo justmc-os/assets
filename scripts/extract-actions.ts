@@ -190,7 +190,7 @@ const getArguments = (
       if (argumentType === ActionArgumentTypes.NUMBER) {
         return {
           id,
-          plural: false,
+          plural: Boolean(plural),
           type: argumentType,
           valueSlots,
           descriptionSlots,
@@ -240,7 +240,7 @@ const getArguments = (
 
       const argument: ActionArgument = {
         id,
-        plural: !!plural,
+        plural: Boolean(plural),
         type: argumentType,
         valueSlots,
         descriptionSlots,
